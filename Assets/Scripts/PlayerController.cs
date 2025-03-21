@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed = 20f;
     public float dashDuration = 0.2f;
     public float dashCooldown = 1f;
+    public float wallslidingSpeed = 6f;
 
     private BoxCollider2D boxCollider;
 
@@ -15,6 +16,11 @@ public class PlayerController : MonoBehaviour
     private bool isJumping = false;
     private bool isDashing = false;
     private bool isGrounded = false; // Track if the player is on the ground
+    private bool isWallsliding = false; 
+    private bool isWallJumping = false;
+    private bool jumpLeft = false;
+    private bool jumpRight = false;
+
 
     private float dashTimer = 0f;
     private float lastDashTime = -Mathf.Infinity;
@@ -33,6 +39,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isWallsliding)
+        {
+            isWallJumping= true;
         }
 
         // Dash input
@@ -71,11 +82,35 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = false;
         }
+
+        if (isWallJumping)
+        {
+        // Reset velocity before applying wall jump force
+            rb.linearVelocity = Vector2.zero;
+
+            if (jumpRight)
+            {
+                rb.linearVelocity = new Vector2(2*jumpForce, jumpForce);
+            }
+
+            if (jumpLeft)
+            {
+                rb.linearVelocity = new Vector2(-2*jumpForce, jumpForce);
+            }
+
+            isWallsliding = false;
+            isWallJumping = false;
+        }
+
+
+        if (isWallsliding)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -wallslidingSpeed);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
         {
             Vector3 normal = other.contacts[0].normal;
             if (normal == Vector3.up)
@@ -83,14 +118,32 @@ public class PlayerController : MonoBehaviour
                 isGrounded = true;
                 isJumping = false;
             }
+            else if (normal == Vector3.left)
+            {
+                if (!isWallJumping)
+                {
+                    isWallsliding = true;
+                    jumpLeft = true;
+                }
+            }
+            else if (normal == Vector3.right)
+            {    
+                if (!isWallJumping)
+                {
+                    isWallsliding = true;
+                    jumpRight = true;
+                }
+            }
         }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+            isWallsliding = false;
+            jumpLeft = false;
+            jumpRight = false;
         }
     }
 }

@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Ground
   - Background_Area
   - Trigger_Render
   - Foreground
   - Midground
   - Background
+  - Ground
   layers:
   - Default
   - TransparentFX
