@@ -7597,7 +7597,7 @@ GameObject:
   - component: {fileID: 2088548786}
   m_Layer: 0
   m_Name: Square (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7611,8 +7611,8 @@ Transform:
   m_GameObject: {fileID: 2088548784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.0149, y: 65.9374, z: -0.0489073}
-  m_LocalScale: {x: 9.351363, y: 1.4396245, z: 1}
+  m_LocalPosition: {x: -18.1, y: 65.9374, z: -0.0489073}
+  m_LocalScale: {x: 15, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 526121840}
@@ -7651,7 +7651,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.004248664, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7661,7 +7661,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0084972, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &2088548787
 SpriteRenderer:
@@ -8130,11 +8130,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.4
+      value: -22.5
       objectReference: {fileID: 0}
     - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.7
+      value: -9.8
       objectReference: {fileID: 0}
     - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: m_LocalPosition.z
