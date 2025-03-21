@@ -8464,6 +8464,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265184070733577105, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 194.9
       objectReference: {fileID: 0}
@@ -8514,6 +8526,10 @@ PrefabInstance:
     - target: {fileID: 2018361975537414913, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: jumpForce
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018361975537414913, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2018361975537414913, guid: 06f3d29b8bc9d4148b6676bacd4006b8, type: 3}
       propertyPath: dashDuration
