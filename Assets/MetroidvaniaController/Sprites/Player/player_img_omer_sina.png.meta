@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_img_omer_sina_0: -3076605123757296314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

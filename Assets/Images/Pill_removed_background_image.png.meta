@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pill_removed_background_image_0: 1725984245129702063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      manor_background_upscayl_4x_realesrgan-x4plus-removebg-preview_0: -7582046229625220563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
