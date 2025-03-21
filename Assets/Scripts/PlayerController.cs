@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
-    private LevelManager levelManager;
     public Rigidbody2D rb;
     public float runSpeed = 8f;
     public float jumpForce = 12f;
@@ -29,24 +27,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        //find object of type LevelManager (one per scene)
-        levelManager = FindFirstObjectByType<LevelManager>();
-
         rb = GetComponent<Rigidbody2D>();
-
-
-
     }
 
     void Update()
     {
-        //the level manager contains methods to manage the game state
-        if (levelManager == null || !levelManager.CanPlay ()) {
-            //freeze the player speed and exit from Update
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            return;
-        }
-
         // Get movement input
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
@@ -159,20 +144,6 @@ public class PlayerController : MonoBehaviour
             isWallsliding = false;
             jumpLeft = false;
             jumpRight = false;
-        }
-    }
-
-    public void OnTriggerEnter2D(Collider2D collider){
-        if (collider.tag == "Garbage") {
-        collider.gameObject.SetActive (false);
-            //
-            // 
-            if (levelManager != null) {
-                //play a sound
-            //    levelManager.PlaySFX (SoundManager.GARBAGE);
-                //increment garbage
-                levelManager.IncrementAmountOfGarbage ();
-            }
         }
     }
 }

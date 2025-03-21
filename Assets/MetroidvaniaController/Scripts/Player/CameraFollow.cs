@@ -5,6 +5,9 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
 	public float FollowSpeed = 2f;
+
+	public float yOffset = 5.5f; // Example offset, adjust as desired
+
 	public Transform Target;
 
 	// Transform of the camera to shake. Grabs the gameObject's transform
@@ -37,7 +40,9 @@ public class CameraFollow : MonoBehaviour
 	private void Update()
 	{
 		Vector3 newPosition = Target.position;
-		newPosition.z = -10;
+		newPosition.y += yOffset;   // Shift the camera up by yOffset
+		newPosition.z = -10;		// Keep the camera at the same z position
+
 		transform.position = Vector3.Slerp(transform.position, newPosition, FollowSpeed * Time.deltaTime);
 
 		if (shakeDuration > 0)
