@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ground
+  - Garbage
+  - Trigger_Render
+  - Foreground
+  - Midground
+  - Background
+  - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
