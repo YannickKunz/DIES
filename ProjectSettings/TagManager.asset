@@ -12,6 +12,7 @@ TagManager:
   - Background
   - Enemy
   - Wall
+  - Invisible
   layers:
   - Default
   - TransparentFX
