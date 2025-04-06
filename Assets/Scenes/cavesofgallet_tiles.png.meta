@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 458b014c052ca074884f033056efa107
+guid: 695b2d0ae085f48299a78f556b9d5a84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8720292256151215032
-    second: ChatGPT Image 6 Nis 2025 17_55_26_0
+      213: 7562716900497062
+    second: cavesofgallet_tiles_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image 6 Nis 2025 17_55_26_0
+      name: cavesofgallet_tiles_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bb9b79da93b40970800000000000000
-      internalID: 8720292256151215032
+      spriteID: 6a6146e304eda1000800000000000000
+      internalID: 7562716900497062
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ChatGPT Image 6 Nis 2025 17_55_26_0: 8720292256151215032
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
