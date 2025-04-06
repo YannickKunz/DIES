@@ -1,0 +1,3067 @@
+fileFormatVersion: 2
+guid: e5c254129e6a47044bd95c0e4c22a857
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1433514598748438555
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_0
+  - first:
+      213: -94210196863349699
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_1
+  - first:
+      213: -5582217653512896750
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_2
+  - first:
+      213: 85390192009826351
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_3
+  - first:
+      213: 3639234456273693814
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_4
+  - first:
+      213: -6663451789444843089
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_5
+  - first:
+      213: 4785458002332448094
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_6
+  - first:
+      213: 2314617340309913483
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_7
+  - first:
+      213: 3146096888415709837
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_8
+  - first:
+      213: 4428350372901783526
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_9
+  - first:
+      213: -5599593265170673212
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_10
+  - first:
+      213: -4827633284539678796
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_11
+  - first:
+      213: -1438943298967922505
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_12
+  - first:
+      213: -7187296920694048345
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_13
+  - first:
+      213: 2639426470224888901
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_14
+  - first:
+      213: -2961923913290822272
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_15
+  - first:
+      213: -1118165197735275880
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_16
+  - first:
+      213: 5234167029689972402
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_17
+  - first:
+      213: -2399571878889714131
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_18
+  - first:
+      213: -2793467665483979647
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_19
+  - first:
+      213: 4542041860246404773
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_20
+  - first:
+      213: -6498249027404370093
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_21
+  - first:
+      213: 1141865766402663455
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_22
+  - first:
+      213: 4418621337573739051
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_23
+  - first:
+      213: -2531758309349230479
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_24
+  - first:
+      213: -2455701695353916642
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_25
+  - first:
+      213: 7364402847161369058
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_26
+  - first:
+      213: -7321626923814508571
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_27
+  - first:
+      213: -1399742100750216598
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_28
+  - first:
+      213: 717495822450817940
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_29
+  - first:
+      213: 2863309676066484330
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_30
+  - first:
+      213: 887608460822685012
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_31
+  - first:
+      213: 7855657449538397284
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_32
+  - first:
+      213: 4221107725238968309
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_33
+  - first:
+      213: 3314423041435496258
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_34
+  - first:
+      213: -6774640095458570003
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_35
+  - first:
+      213: -2866856876348053569
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_36
+  - first:
+      213: 869572373072414516
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_37
+  - first:
+      213: -1078408027870554271
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_38
+  - first:
+      213: 660420141323158375
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_39
+  - first:
+      213: 7978782142855061067
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_40
+  - first:
+      213: 4135315873628481984
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_41
+  - first:
+      213: 8241527574400406575
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_42
+  - first:
+      213: -650877386834948416
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_43
+  - first:
+      213: -2930976835400714915
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_44
+  - first:
+      213: -5042296332303177949
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_45
+  - first:
+      213: -2118059099321725058
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_46
+  - first:
+      213: 8724301107620275683
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_47
+  - first:
+      213: -1807241512510675380
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_48
+  - first:
+      213: 2209024695416641604
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_49
+  - first:
+      213: 7433851296886754386
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_50
+  - first:
+      213: -8295653287709042221
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_51
+  - first:
+      213: 3233275764025309648
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_52
+  - first:
+      213: 6044673747543577490
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_53
+  - first:
+      213: -5934962307157555385
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_54
+  - first:
+      213: 5880096148842754770
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_55
+  - first:
+      213: -7177234943471463518
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_56
+  - first:
+      213: 6394166665793108524
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_57
+  - first:
+      213: -1385768184879374361
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_58
+  - first:
+      213: 4589880567233830547
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_59
+  - first:
+      213: 8761012478192792229
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_60
+  - first:
+      213: -6291006411750712604
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_61
+  - first:
+      213: 6332824720093573552
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_62
+  - first:
+      213: -8864310975352179450
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_63
+  - first:
+      213: 7018886239977278604
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_64
+  - first:
+      213: 7569749287099205008
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_65
+  - first:
+      213: -2849583558892103243
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_66
+  - first:
+      213: 1257545961635593701
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_67
+  - first:
+      213: 3931974004339534840
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_68
+  - first:
+      213: 4558643118764949256
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_69
+  - first:
+      213: 1947041786085814080
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_70
+  - first:
+      213: 5825377224016287709
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_71
+  - first:
+      213: 927542122808841598
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_72
+  - first:
+      213: -2650729290821427100
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_73
+  - first:
+      213: -5365060666127602278
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_74
+  - first:
+      213: 6335241604280762328
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_75
+  - first:
+      213: 1625514674063079956
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_76
+  - first:
+      213: -152627006300972229
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_77
+  - first:
+      213: -1956709460938301138
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_78
+  - first:
+      213: 7013403388176067119
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_79
+  - first:
+      213: -7627394273154238332
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_80
+  - first:
+      213: -3352558003669197912
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_81
+  - first:
+      213: -2824934970158931012
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_82
+  - first:
+      213: -4889557063249552646
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_83
+  - first:
+      213: 895881845660674584
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_84
+  - first:
+      213: -3575252255272153224
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_85
+  - first:
+      213: 6453721505619632928
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_86
+  - first:
+      213: -6530551300181364831
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_87
+  - first:
+      213: -1485425696732739742
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_88
+  - first:
+      213: -1477279448416377923
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_89
+  - first:
+      213: -6796833316299752072
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_90
+  - first:
+      213: -3835767277760752798
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_91
+  - first:
+      213: 4380739706468077028
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_92
+  - first:
+      213: 3328791037847017161
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_93
+  - first:
+      213: 207879853305817851
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_94
+  - first:
+      213: -6630231451858495593
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_95
+  - first:
+      213: 4162318049846043399
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_96
+  - first:
+      213: -4542564620237750118
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_97
+  - first:
+      213: -1231164219327128763
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_98
+  - first:
+      213: 7653453782803169149
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_99
+  - first:
+      213: 6278937582140853678
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_100
+  - first:
+      213: -312594681858491729
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_101
+  - first:
+      213: -1977960601520931414
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_102
+  - first:
+      213: 8302663381557740704
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_103
+  - first:
+      213: -718673603818640862
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_104
+  - first:
+      213: -3273574358376820455
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_105
+  - first:
+      213: -7360050221202510989
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_106
+  - first:
+      213: 6980582318724947809
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_107
+  - first:
+      213: 5790502287231469398
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_108
+  - first:
+      213: 7862333537462746528
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_109
+  - first:
+      213: -6258427906244751411
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_110
+  - first:
+      213: 3571560652289721181
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_111
+  - first:
+      213: 7545239329718613446
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_112
+  - first:
+      213: 208917672880205060
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_113
+  - first:
+      213: 5222585545888457006
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_114
+  - first:
+      213: -712479767536335639
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_115
+  - first:
+      213: -6813789061567576862
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_116
+  - first:
+      213: 6737284637983678478
+    second: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_117
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 353
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef334941122b1ce0800000000000000
+      internalID: -1433514598748438555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 991
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c8db9335c41bef0800000000000000
+      internalID: -94210196863349699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 959
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ff277be9af782b0800000000000000
+      internalID: -5582217653512896750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 751
+        width: 498
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f205c0e5ded5f2100800000000000000
+      internalID: 85390192009826351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_4
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 752
+        width: 172
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c2e8cd478218230800000000000000
+      internalID: 3639234456273693814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_5
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 990
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9f238e6e9a683a0800000000000000
+      internalID: -6663451789444843089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_6
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 984
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55739cd2bc596240800000000000000
+      internalID: 4785458002332448094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_7
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 976
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fb128253c2f1020800000000000000
+      internalID: 2314617340309913483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_8
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 973
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8aeaf6837e29ab20800000000000000
+      internalID: 3146096888415709837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_9
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 981
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e787c5a339a47d30800000000000000
+      internalID: 4428350372901783526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_10
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 957
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c115ded79f3a42b0800000000000000
+      internalID: -5599593265170673212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_11
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 991
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bff8290b1dc00db0800000000000000
+      internalID: -4827633284539678796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_12
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 471
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8961581b8d70ce0800000000000000
+      internalID: -1438943298967922505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_13
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 962
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9b5c2d787914c90800000000000000
+      internalID: -7187296920694048345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 927
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5448480f36021a420800000000000000
+      internalID: 2639426470224888901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_15
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 869
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dc090d4e125e6d0800000000000000
+      internalID: -2961923913290822272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_16
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 918
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892d8cc4daa7b70f0800000000000000
+      internalID: -1118165197735275880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_17
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 905
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b67bb38e2f73a840800000000000000
+      internalID: 5234167029689972402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_18
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 896
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e03c1f61203bed0800000000000000
+      internalID: -2399571878889714131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_19
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 880
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184a94b65fb9b39d0800000000000000
+      internalID: -2793467665483979647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_20
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 879
+        width: 9
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aef0f2d103980f30800000000000000
+      internalID: 4542041860246404773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_21
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 871
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fe88350f491d5a0800000000000000
+      internalID: -6498249027404370093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_22
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 873
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f142c9b5dd8b8df00800000000000000
+      internalID: 1141865766402663455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 863
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a4b0712b8125d30800000000000000
+      internalID: 4418621337573739051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_24
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 858
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17878124b336ddcd0800000000000000
+      internalID: -2531758309349230479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_25
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 863
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13fa16a1589bedd0800000000000000
+      internalID: -2455701695353916642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_26
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 855
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1cde70f5d933660800000000000000
+      internalID: 7364402847161369058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_27
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 848
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7a91cba1b546a90800000000000000
+      internalID: -7321626923814508571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_28
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 840
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62df9bb9fd139ce0800000000000000
+      internalID: -1399742100750216598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_29
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 829
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bf10926ae05f900800000000000000
+      internalID: 717495822450817940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_30
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 832
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60b1ebdaf48cb720800000000000000
+      internalID: 2863309676066484330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_31
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 824
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455a7fe313b615c00800000000000000
+      internalID: 887608460822685012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_32
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 816
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46423ec44d6e40d60800000000000000
+      internalID: 7855657449538397284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_33
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 803
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff96899c13649a30800000000000000
+      internalID: 4221107725238968309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_34
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 821
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fe12412323ffd20800000000000000
+      internalID: 3314423041435496258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_35
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 808
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d21d0ab4abf1a0800000000000000
+      internalID: -6774640095458570003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_36
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 800
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb763673cd0e638d0800000000000000
+      internalID: -2866856876348053569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 790
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43789735777511c00800000000000000
+      internalID: 869572373072414516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_38
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 792
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16798dfbc99b801f0800000000000000
+      internalID: -1078408027870554271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 784
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76384169e984a2900800000000000000
+      internalID: 660420141323158375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_40
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 776
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e1b15e5145abe60800000000000000
+      internalID: 7978782142855061067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_41
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 783
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9e8a190e7936930800000000000000
+      internalID: 4135315873628481984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_42
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 773
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2419b6d9a9cf5270800000000000000
+      internalID: 8241527574400406575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_43
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 777
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce4e55177e97f6f0800000000000000
+      internalID: -650877386834948416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_44
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 767
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55ba01e8141357d0800000000000000
+      internalID: -2930976835400714915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 769
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32760d4733a260ab0800000000000000
+      internalID: -5042296332303177949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_46
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 768
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f05ab98742b92e0800000000000000
+      internalID: -2118059099321725058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_47
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 759
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5e04152a1f21970800000000000000
+      internalID: 8724301107620275683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_48
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 768
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4626776b636be6e0800000000000000
+      internalID: -1807241512510675380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_49
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 765
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448df5ea14808ae10800000000000000
+      internalID: 2209024695416641604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_50
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 758
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c03084e585a2760800000000000000
+      internalID: 7433851296886754386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_51
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 752
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d91d4e794befdc80800000000000000
+      internalID: -8295653287709042221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_52
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 751
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9bb9f3d27eedc20800000000000000
+      internalID: 3233275764025309648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_53
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 751
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293d6715fbef2e350800000000000000
+      internalID: 6044673747543577490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_54
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 751
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7478a86f937c2ada0800000000000000
+      internalID: -5934962307157555385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_55
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 754
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d23ae41b4c4a9150800000000000000
+      internalID: 5880096148842754770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_56
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 759
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3dcd478d6556c90800000000000000
+      internalID: -7177234943471463518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_57
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 751
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2afd3d64b4acb850800000000000000
+      internalID: 6394166665793108524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_58
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 751
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef1a3f8d23c4cce0800000000000000
+      internalID: -1385768184879374361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_59
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 748
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ed073ce0882bf30800000000000000
+      internalID: 4589880567233830547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_60
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 786
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2327b5e6e559970800000000000000
+      internalID: 8761012478192792229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_61
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 744
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ead4ebeffad1b8a0800000000000000
+      internalID: -6291006411750712604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_62
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 734
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b17df9b786b2e750800000000000000
+      internalID: 6332824720093573552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_63
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 694
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605798f0224abf480800000000000000
+      internalID: -8864310975352179450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_64
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 686
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c09bcf8d7186160800000000000000
+      internalID: 7018886239977278604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_65
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 670
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0958050ded62d0960800000000000000
+      internalID: 7569749287099205008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_66
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 664
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b95176d9de3478d0800000000000000
+      internalID: -2849583558892103243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 139
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed340ca363b37110800000000000000
+      internalID: 1257545961635593701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_68
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 658
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb6ab2468d219630800000000000000
+      internalID: 3931974004339534840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_69
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 279
+        width: 192
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f73c783cd834f30800000000000000
+      internalID: 4558643118764949256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_70
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 602
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fac764038450b10800000000000000
+      internalID: 1947041786085814080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_71
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 538
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7542898b5e7d050800000000000000
+      internalID: 5825377224016287709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_72
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 473
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e759b3875aa4fdc00800000000000000
+      internalID: 927542122808841598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_73
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 447
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460add011c7b63bd0800000000000000
+      internalID: -2650729290821427100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_74
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 400
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d2b0ddfb97b85b0800000000000000
+      internalID: -5365060666127602278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_75
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 272
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df3e6d6cac4be750800000000000000
+      internalID: 6335241604280762328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_76
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 271
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41af6b4dbfcfe8610800000000000000
+      internalID: 1625514674063079956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_77
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b9c42eb82c1edf0800000000000000
+      internalID: -152627006300972229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_78
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 246
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e216024cc1f58d4e0800000000000000
+      internalID: -1956709460938301138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_79
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 230
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a61c2193d945160800000000000000
+      internalID: 7013403388176067119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_80
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 232
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488facaf15d062690800000000000000
+      internalID: -7627394273154238332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_81
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 238
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab976e12425971d0800000000000000
+      internalID: -3352558003669197912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_82
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 231
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3291e9c90dbc8d0800000000000000
+      internalID: -2824934970158931012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_83
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 223
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa1208c1cdc42cb0800000000000000
+      internalID: -4889557063249552646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_84
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 199
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a6353cacfce6c00800000000000000
+      internalID: 895881845660674584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_85
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 200
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fc61e2407226ec0800000000000000
+      internalID: -3575252255272153224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_86
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 192
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023e1cd1489309950800000000000000
+      internalID: 6453721505619632928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_87
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 172
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af693d5132de55a0800000000000000
+      internalID: -6530551300181364831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_88
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 181
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267020ee235b26be0800000000000000
+      internalID: -1485425696732739742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_89
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 166
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3282b2b26af7be0800000000000000
+      internalID: -1477279448416377923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_90
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 173
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db9682c1ccca1a0800000000000000
+      internalID: -6796833316299752072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_91
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 165
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263d000dbfd94cac0800000000000000
+      internalID: -3835767277760752798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_92
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 159
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed8a798d838bcc30800000000000000
+      internalID: 4380739706468077028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_93
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 152
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6106eefcd323e20800000000000000
+      internalID: 3328791037847017161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_94
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 152
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfae04c00a982e200800000000000000
+      internalID: 207879853305817851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_95
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 143
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7971a5d7f9facf3a0800000000000000
+      internalID: -6630231451858495593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_96
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 134
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7032543a63683c930800000000000000
+      internalID: 4162318049846043399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_97
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 136
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90c871ab8195f0c0800000000000000
+      internalID: -4542564620237750118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_98
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 128
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bd5de5aa60aeee0800000000000000
+      internalID: -1231164219327128763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_99
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 112
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f3adc6aa7863a60800000000000000
+      internalID: 7653453782803169149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_100
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 106
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead0b56b674432750800000000000000
+      internalID: 6278937582140853678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_101
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 104
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faaf5250bc079abf0800000000000000
+      internalID: -312594681858491729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_102
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 96
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad70a6005fdc84e0800000000000000
+      internalID: -1977960601520931414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_103
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4846b2b5cf83370800000000000000
+      internalID: 8302663381557740704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_104
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 95
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22aa0fe3a22c606f0800000000000000
+      internalID: -718673603818640862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_105
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 88
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9115f17177de192d0800000000000000
+      internalID: -3273574358376820455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_106
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b603ca159dbd990800000000000000
+      internalID: -7360050221202510989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_107
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 87
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f19f852a200e060800000000000000
+      internalID: 6980582318724947809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_108
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 54
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657c48d962ffb5050800000000000000
+      internalID: 5790502287231469398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_109
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 38
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad7b1622be9c1d60800000000000000
+      internalID: 7862333537462746528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_110
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 34
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfc3e35af89529a0800000000000000
+      internalID: -6258427906244751411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_111
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53cd758d7bb09130800000000000000
+      internalID: 3571560652289721181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_112
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c53f29a13316b860800000000000000
+      internalID: 7545239329718613446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_113
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 24
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d635f348936e200800000000000000
+      internalID: 208917672880205060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_114
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 24
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2165cf22e95a7840800000000000000
+      internalID: 5222585545888457006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_115
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e408522d63cc16f0800000000000000
+      internalID: -712479767536335639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_116
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e482d213fe8071a0800000000000000
+      internalID: -6813789061567576862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405_2025_Ethereal Adventure Level_remix_01jr3k6r1af81r060t05c0s27m_117
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00a6bdbea4af7d50800000000000000
+      internalID: 6737284637983678478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
