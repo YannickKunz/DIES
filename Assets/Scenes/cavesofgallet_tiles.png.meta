@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cavesofgallet_tiles_0: 7562716900497062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
