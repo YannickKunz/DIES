@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MusicTrigger : MonoBehaviour
 {
-    public AudioClip musicClip;
+    public AudioClip triggerMusicClip; // Music to play in the trigger zone
+    public AudioClip defaultMusicClip; // Default background music
     public AudioSource musicSource;
     public bool playOnlyOnce = true;
     [Range(0f, 1f)]
@@ -17,51 +18,55 @@ public class MusicTrigger : MonoBehaviour
         {
             Debug.LogError("MusicTrigger: No AudioSource assigned!");
         }
-        
-        if (musicClip == null)
+
+        if (triggerMusicClip == null)
         {
-            Debug.LogError("MusicTrigger: No AudioClip assigned!");
+            Debug.LogError("MusicTrigger: No trigger AudioClip assigned!");
+        }
+
+        if (defaultMusicClip == null)
+        {
+            Debug.LogError("MusicTrigger: No default AudioClip assigned!");
+        }
+
+        // Start playing the default music
+        if (musicSource != null && defaultMusicClip != null)
+        {
+            musicSource.clip = defaultMusicClip;
+            musicSource.volume = volume;
+            musicSource.Play();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Something entered the trigger: " + other.name);
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered the trigger.");
-
-            if ((!hasPlayed || !playOnlyOnce) && musicSource != null && musicClip != null)
+            if ((!hasPlayed || !playOnlyOnce) && musicSource != null && triggerMusicClip != null)
             {
-                Debug.Log("Trigger conditions met. Playing music...");
                 musicSource.Stop();
-                musicSource.clip = musicClip;
+                musicSource.clip = triggerMusicClip;
                 musicSource.volume = volume;
                 musicSource.Play();
-                Debug.Log("Music triggered! Volume: " + musicSource.volume);
 
                 if (playOnlyOnce)
                     hasPlayed = true;
             }
-            else
-            {
-                Debug.Log("Trigger conditions not met.");
-            }
-            }
-            else
-            {
-                Debug.Log("Non-player object entered the trigger.");
-            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
-{
-    if (other.CompareTag("Player"))
     {
-        // Optional: stop music or revert to previous
-        musicSource.Stop();
+        if (other.CompareTag("Player"))
+        {
+            // Revert to default background music
+            if (musicSource != null && defaultMusicClip != null)
+            {
+                musicSource.Stop();
+                musicSource.clip = defaultMusicClip;
+                musicSource.volume = volume;
+                musicSource.Play();
+            }
+        }
     }
-}
-
 }
