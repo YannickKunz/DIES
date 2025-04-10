@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4559110850073985688}
   - component: {fileID: 1376199429421228941}
   - component: {fileID: 5875835984108365246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,9 +127,9 @@ GameObject:
   - component: {fileID: 4876316589291777077}
   - component: {fileID: 1165730902849144932}
   - component: {fileID: 5929783333742426622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,7 +194,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.09871833, g: 0.8867924, b: 0.67938197, a: 1}
+  m_Color: {r: 0.1137255, g: 0.21960786, b: 0.24313727, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -202,7 +202,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!61 &5929783333742426622
 BoxCollider2D:

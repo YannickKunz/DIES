@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 695b2d0ae085f48299a78f556b9d5a84
+guid: c8be83d80e6ef494da966b04a50b7de0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7562716900497062
-    second: cavesofgallet_tiles_0
+      213: -4814684483198701221
+    second: "skeleton_controller_problemat\u0131c_\u0131ssue_\u0131mage_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cavesofgallet_tiles_0
+      name: "skeleton_controller_problemat\u0131c_\u0131ssue_\u0131mage_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 96
+        width: 1806
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a6146e304eda1000800000000000000
-      internalID: 7562716900497062
+      spriteID: b513b59c8fdce2db0800000000000000
+      internalID: -4814684483198701221
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cavesofgallet_tiles_0: 7562716900497062
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
