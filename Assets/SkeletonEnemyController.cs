@@ -171,7 +171,6 @@ private void LateUpdate()
     }
 }
 
-// Replace the current FixedUpdate method in SkeletonEnemyController with this:
 private void FixedUpdate()
 {
     // Only move if in a moving state and grounded

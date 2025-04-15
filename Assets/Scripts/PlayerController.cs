@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
     private bool canMove = true;
     private bool canCheck = false;
     private bool limitVelOnWallJump = false;
+    private float lastWallJumpTime = 0f;
     
     // Movement helpers
     private float horizontalInput;
@@ -147,6 +148,16 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isWallSliding)
         {
             StartCoroutine(DashCooldown());
+        }
+        // Reset jump animation when not jumping
+        if (Input.GetKeyDown(KeyCode.R)) // R for Reset
+        {
+            Debug.Log("Movement reset requested");
+            canMove = true;
+            limitVelOnWallJump = false;
+            isDashing = false;
+            isWallSliding = false;
+            oldWallSliding = false;
         }
     }
 
@@ -291,36 +302,51 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void HandleWallJumpDistance()
+void HandleWallJumpDistance()
+{
+    if (limitVelOnWallJump)
     {
-        if (limitVelOnWallJump)
+        // Add a timeout safety to prevent getting permanently stuck
+        if (Time.time - lastWallJumpTime > 0.5f)
         {
-            if (rb.linearVelocity.y < -0.5f)
-                limitVelOnWallJump = false;
+            limitVelOnWallJump = false;
+            canMove = true;
+            return;
+        }
+
+        if (rb.linearVelocity.y < -0.5f)
+        {
+            limitVelOnWallJump = false;
+            canMove = true; // Always ensure canMove is reset when falling
+            return;
+        }
                 
-            jumpWallDistX = (jumpWallStartX - transform.position.x) * transform.localScale.x;
-            
-            if (jumpWallDistX < -0.5f && jumpWallDistX > -1f)
-            {
-                canMove = true;
-            }
-            else if (jumpWallDistX < -1f && jumpWallDistX >= -2f)
-            {
-                canMove = true;
-                rb.linearVelocity = new Vector2(10f * transform.localScale.x, rb.linearVelocity.y);
-            }
-            else if (jumpWallDistX < -2f)
-            {
-                limitVelOnWallJump = false;
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            }
-            else if (jumpWallDistX > 0)
-            {
-                limitVelOnWallJump = false;
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            }
+        jumpWallDistX = (jumpWallStartX - transform.position.x) * transform.localScale.x;
+        
+        // First two conditions already set canMove = true correctly
+        if (jumpWallDistX < -0.5f && jumpWallDistX > -1f)
+        {
+            canMove = true;
+        }
+        else if (jumpWallDistX < -1f && jumpWallDistX >= -2f)
+        {
+            canMove = true;
+            rb.linearVelocity = new Vector2(10f * transform.localScale.x, rb.linearVelocity.y);
+        }
+        else if (jumpWallDistX < -2f)
+        {
+            limitVelOnWallJump = false;
+            canMove = true; // Add this line to ensure canMove is reset
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+        else if (jumpWallDistX > 0)
+        {
+            limitVelOnWallJump = false;
+            canMove = true; // Add this line to ensure canMove is reset
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
+}
 
     void Jump()
     {
@@ -360,13 +386,14 @@ public class PlayerController : MonoBehaviour
         
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(new Vector2(transform.localScale.x * jumpForce * wallJumpHorizontalMultiplier, 
-                               jumpForce * wallJumpVerticalMultiplier), 
-                               ForceMode2D.Impulse);
-                               
+                            jumpForce * wallJumpVerticalMultiplier), 
+                            ForceMode2D.Impulse);
+                            
         jumpWallStartX = transform.position.x;
         limitVelOnWallJump = true;
         canDoubleJump = true;
         isWallSliding = false;
+        lastWallJumpTime = Time.time; // Add this line to track when wall jump happened
         
         if (animator != null)
             animator.SetBool("IsWallSliding", false);

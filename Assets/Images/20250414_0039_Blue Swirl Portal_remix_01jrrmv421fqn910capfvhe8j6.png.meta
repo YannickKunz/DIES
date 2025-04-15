@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 2eeb5cbbf45e9dd49b211ca89ef3dddf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5188885289206164137
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_0
+  - first:
+      213: 1710566049687082773
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_1
+  - first:
+      213: 1066361499637854975
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_2
+  - first:
+      213: -1368242079517108921
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_3
+  - first:
+      213: 7266767493305570973
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_4
+  - first:
+      213: 7013859916164354285
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_5
+  - first:
+      213: 4746243920815752669
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_6
+  - first:
+      213: -4089946714572091506
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_7
+  - first:
+      213: 5962872788280189131
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_8
+  - first:
+      213: -7905763737364124545
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_9
+  - first:
+      213: 8604093539307513506
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_10
+  - first:
+      213: -3538349013790567457
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_11
+  - first:
+      213: 2120286451587912543
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_12
+  - first:
+      213: -2850642060414014857
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_13
+  - first:
+      213: 2099656507119119700
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_14
+  - first:
+      213: -8399327179934186844
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_15
+  - first:
+      213: 4486340288092300744
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_16
+  - first:
+      213: 7004594978286626007
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_17
+  - first:
+      213: -1203925343031008939
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_18
+  - first:
+      213: -7572485307137623584
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_19
+  - first:
+      213: -8080480636060153603
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_20
+  - first:
+      213: 1081757463553968759
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_21
+  - first:
+      213: -835062087577318805
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_22
+  - first:
+      213: -4072962731576706085
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_23
+  - first:
+      213: 5965540878457225071
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_24
+  - first:
+      213: 8990162693219440046
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_25
+  - first:
+      213: -4963946987649705173
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_26
+  - first:
+      213: 6877834416031163940
+    second: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_0
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 911
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755dd9442506df7b0800000000000000
+      internalID: -5188885289206164137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_1
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 915
+        width: 158
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517117c52c62db710800000000000000
+      internalID: 1710566049687082773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 908
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff23114522a7cce00800000000000000
+      internalID: 1066361499637854975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 678
+        width: 259
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74514a3f317030de0800000000000000
+      internalID: -1368242079517108921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_4
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 912
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9695dfb88eb8d460800000000000000
+      internalID: 7266767493305570973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 690
+        width: 81
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d357ce6c365160800000000000000
+      internalID: 7013859916164354285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 237
+        width: 532
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5849503bb0ed140800000000000000
+      internalID: 4746243920815752669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 812
+        width: 123
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f87afe1279d37c0800000000000000
+      internalID: -4089946714572091506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_8
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 758
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0a842553160c250800000000000000
+      internalID: 5962872788280189131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_9
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 726
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c2f3474c5194290800000000000000
+      internalID: -7905763737364124545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_10
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 670
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a668a0dc71e76770800000000000000
+      internalID: 8604093539307513506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 642
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3d8a5a15245eec0800000000000000
+      internalID: -3538349013790567457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_12
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 182
+        width: 398
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5398f04b45cc6d10800000000000000
+      internalID: 2120286451587912543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 206
+        width: 235
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a2c3f362c7078d0800000000000000
+      internalID: -2850642060414014857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_14
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 591
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d2c21087a732d10800000000000000
+      internalID: 2099656507119119700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_15
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 535
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a24dbf6e689f6b80800000000000000
+      internalID: -8399327179934186844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_16
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 511
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5e34de8bea24e30800000000000000
+      internalID: 4486340288092300744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 415
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d462445502553160800000000000000
+      internalID: 7004594978286626007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_18
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 202
+        width: 159
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551eb88774cca4fe0800000000000000
+      internalID: -1203925343031008939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_19
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 351
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e97231ebb029e690800000000000000
+      internalID: -7572485307137623584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_20
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 151
+        width: 103
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df846397cad5cdf80800000000000000
+      internalID: -8080480636060153603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 143
+        width: 235
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a03448eac230f00800000000000000
+      internalID: 1081757463553968759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_22
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 99
+        width: 152
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ace88a4734964f0800000000000000
+      internalID: -835062087577318805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_23
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 157
+        width: 107
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb37f0a9fde977c0800000000000000
+      internalID: -4072962731576706085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_24
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 95
+        width: 106
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fb38972dbd9c250800000000000000
+      internalID: 5965540878457225071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 109
+        width: 106
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5505a665973cc70800000000000000
+      internalID: 8990162693219440046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_26
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 118
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bd44dc3848c1bb0800000000000000
+      internalID: -4963946987649705173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250414_0039_Blue Swirl Portal_remix_01jrrmv421fqn910capfvhe8j6_27
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 85
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4266e7706f9f27f50800000000000000
+      internalID: 6877834416031163940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
