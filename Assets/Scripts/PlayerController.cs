@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
-        
+        /*
         // Jump input
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(DashCooldown());
         }
+        */
         // Reset jump animation when not jumping
         if (Input.GetKeyDown(KeyCode.R)) // R for Reset
         {
@@ -412,6 +413,36 @@ void HandleWallJumpDistance()
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+
+    public void Move(float move, bool jump, bool dash)
+    {
+        // Store horizontal input for use in FixedUpdate
+        horizontalInput = move;
+        
+        // Handle jump input
+        if (jump)
+        {
+            if (isGrounded)
+            {
+                Jump();
+            }
+            else if (isWallSliding)
+            {
+                WallJump();
+            }
+            else if (canDoubleJump)
+            {
+                DoubleJump();
+            }
+        }
+        
+        // Handle dash input
+        if (dash && canDash && !isWallSliding)
+        {
+            StartCoroutine(DashCooldown());
+        }
     }
 
 public void ApplyDamage(DamageInfo info)

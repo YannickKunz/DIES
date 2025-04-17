@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4291727345091452}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1139487818724482}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.09, z: 0}
+  m_LocalPosition: {x: -0.017, y: -1.241, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4660076192433278}
-  - component: {fileID: 114231493902538710}
   - component: {fileID: 114435281327171648}
   - component: {fileID: 114145887554720856}
   - component: {fileID: 212971026275759962}
@@ -48,7 +47,8 @@ GameObject:
   - component: {fileID: 50738830109512580}
   - component: {fileID: 70405055242815152}
   - component: {fileID: 82701611152381692}
-  m_Layer: 1
+  - component: {fileID: 2236336628737428268}
+  m_Layer: 6
   m_Name: DrawCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.7, y: -1.37, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4291727345091452}
@@ -75,62 +75,6 @@ Transform:
   - {fileID: 4559817074117408}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114231493902538710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377240496476148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783f8b7882d2d2a42a5b76de9179978f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 850
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 53
-  m_GroundCheck: {fileID: 4291727345091452}
-  m_WallCheck: {fileID: 4986330650710208}
-  canDoubleJump: 0
-  m_DashForce: 25
-  life: 10
-  invincible: 0
-  particleJumpUp: {fileID: 198584872278178884}
-  particleJumpDown: {fileID: 198967111524372206}
-  OnFallEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114145887554720856}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnFall
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114145887554720856}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnLanding
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &114435281327171648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8644d33345e77614ba3ace9c18398d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 114231493902538710}
+  controller: {fileID: 2236336628737428268}
   animator: {fileID: 95975118031919256}
   runSpeed: 40
 --- !u!212 &212971026275759962
@@ -303,8 +247,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0069696903, y: -0.15639412}
-  m_Size: {x: 0.9249933, y: 1.8817303}
+  m_Offset: {x: -0.02, y: -0.21653876}
+  m_Size: {x: 0.96, y: 1.96}
   m_Direction: 0
 --- !u!82 &82701611152381692
 AudioSource:
@@ -403,6 +347,69 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2236336628737428268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377240496476148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cbe61a79cbe46b28d16a8cbe207c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 15
+  jumpForce: 25
+  movementSmoothing: 0.05
+  airControl: 1
+  limitFallSpeed: 25
+  dashForce: 20
+  dashDuration: 0.1
+  dashCooldown: 0.6
+  wallSlidingSpeed: 5
+  wallCheck: {fileID: 4986330650710208}
+  groundCheck: {fileID: 4291727345091452}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 255
+  wallJumpHorizontalMultiplier: 1.2
+  wallJumpVerticalMultiplier: 1
+  life: 10
+  invincible: 0
+  particleJumpUp: {fileID: 198584872278178884}
+  particleJumpDown: {fileID: 198967111524372206}
+  OnFallEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1477428158609486}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1620716113202630}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1393053470196254
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4986330650710208}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +435,7 @@ Transform:
   m_GameObject: {fileID: 1393053470196254}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0.7, y: -0.187, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,7 +452,7 @@ GameObject:
   - component: {fileID: 4202976304329374}
   - component: {fileID: 198584872278178884}
   - component: {fileID: 199702487371442802}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5289,7 +5296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4370582630649528}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: AttackCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5305,7 +5312,7 @@ Transform:
   m_GameObject: {fileID: 1568700092027370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0.655, y: -0.153, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5322,7 +5329,7 @@ GameObject:
   - component: {fileID: 4559817074117408}
   - component: {fileID: 198967111524372206}
   - component: {fileID: 199720515671813628}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: SmokeGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10162,7 +10169,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
