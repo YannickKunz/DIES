@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Seamless Game Background_0: 1273810609282469018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
