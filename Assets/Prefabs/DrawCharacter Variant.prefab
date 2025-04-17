@@ -13,24 +13,12 @@ PrefabInstance:
       value: DrawCharacter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.14
+      value: -61.41
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.84
+      value: -13.33
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64,17 +52,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199720515671813628, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
+    - target: {fileID: 70405055242815152, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9395927
       objectReference: {fileID: 0}
-    - target: {fileID: 3480175149026755856, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: yOffset
-      value: 5
+    - target: {fileID: 70405055242815152, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18532515
       objectReference: {fileID: 0}
-    - target: {fileID: 3572375284007516654, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
-      propertyPath: orthographic size
-      value: 7.82
+    - target: {fileID: 2236336628737428268, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      propertyPath: life
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

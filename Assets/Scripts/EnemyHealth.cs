@@ -44,6 +44,18 @@ public class EnemyHealth : MonoBehaviour
             Die();
         }
     }
+
+    // Add this method to your EnemyHealth.cs
+    public void ApplyDamage(DamageInfo damageInfo)
+    {
+        TakeDamage(damageInfo.DamageAmount, damageInfo.DamageSource);
+    }
+
+    // Also add this method for backwards compatibility
+    public void ApplyDamage(float damage)
+    {
+        TakeDamage(damage, transform.position);
+    }
     
     private void Die()
     {
