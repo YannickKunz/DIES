@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asidic_Droplet_0: 4651586688708002366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
