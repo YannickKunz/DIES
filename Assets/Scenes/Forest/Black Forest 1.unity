@@ -29665,7 +29665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSceneName: DeathScene
-  isDead: 0
+  isDead: 1
 --- !u!1 &2019441796
 GameObject:
   m_ObjectHideFlags: 0
