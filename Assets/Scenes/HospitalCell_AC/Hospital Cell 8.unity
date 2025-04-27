@@ -10743,6 +10743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2040968629}
   speed: 1
+  alwaysActive: 0
 --- !u!1 &1090250006
 GameObject:
   m_ObjectHideFlags: 0
@@ -20028,21 +20029,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cbe61a79cbe46b28d16a8cbe207c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
   runSpeed: 8
   jumpForce: 15
-  dashSpeed: 20
+  movementSmoothing: 0.05
+  airControl: 1
+  limitFallSpeed: 25
+  dashForce: 20
   dashDuration: 0.2
   dashCooldown: 1
-  wallslidingSpeed: 4
-  wallJumpCooldown: 0.2
-  wallJumpHorizontalMultiplier: 0.8
-  wallJumpVerticalMultiplier: 1.5
+  wallSlidingSpeed: 5
+  wallCheck: {fileID: 0}
   groundCheck: {fileID: 1891640030}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  wallJumpHorizontalMultiplier: 0.8
+  wallJumpVerticalMultiplier: 1.5
+  life: 10
+  invincible: 0
+  particleJumpUp: {fileID: 0}
+  particleJumpDown: {fileID: 0}
+  OnFallEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!96 &2040968631
 TrailRenderer:
   serializedVersion: 3
