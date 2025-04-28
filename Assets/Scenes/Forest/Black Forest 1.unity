@@ -1261,11 +1261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -333.2
+      value: -333.13
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -53
+      value: -52.83
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15285,7 +15285,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 8fe43500700243a45946e0df34ce55be, type: 3}
   m_Resource: {fileID: 8300000, guid: 8fe43500700243a45946e0df34ce55be, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.913
+  m_Volume: 0.16
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -21644,7 +21644,7 @@ MonoBehaviour:
   defaultMusicClip: {fileID: 8300000, guid: 8fe43500700243a45946e0df34ce55be, type: 3}
   musicSource: {fileID: 1092411353}
   playOnlyOnce: 0
-  volume: 0.128
+  volume: 0.103
 --- !u!212 &1352351799
 SpriteRenderer:
   m_ObjectHideFlags: 0
