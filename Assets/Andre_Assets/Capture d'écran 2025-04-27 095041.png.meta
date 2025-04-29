@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Capture d'\xE9cran 2025-04-27 095041_0": -5160927879611354620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
