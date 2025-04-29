@@ -14,6 +14,7 @@ TagManager:
   - Wall
   - Invisible
   - Canon
+  - Ghost
   layers:
   - Default
   - TransparentFX
