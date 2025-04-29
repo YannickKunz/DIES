@@ -3,19 +3,18 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    private EnemyData data;
-    private Rigidbody2D rb;
-    private Vector2 moveDirection;
-    private Vector2 originalScale;
-    private bool isFacingRight = true;
-    private Transform groundCheck;
-    private bool isGrounded;
+    protected EnemyData data;
+    protected Rigidbody2D rb;
+    protected Vector2 moveDirection;
+    protected Vector2 originalScale;
+    protected bool isFacingRight = true;
+    protected Transform groundCheck;
+    protected bool isGrounded;
+    protected EnemyAnimator animator;
     
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius = 0.2f;
-    
-    private EnemyAnimator animator;
-    
+        
     public void Initialize(EnemyData enemyData)
     {
         data = enemyData;
@@ -38,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
     
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // Check if grounded
         CheckGrounded();
@@ -53,15 +52,14 @@ public class EnemyMovement : MonoBehaviour
         KeepOnGround();
     }
     
-    private void CheckGrounded()
+    protected void CheckGrounded()
     {
         if (groundCheck == null) return;
         
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
     
-    private void KeepOnGround()
-    {
+    protected virtual void KeepOnGround()    {
         if (!isGrounded)
         {
             Vector2 rayStart = transform.position;
@@ -103,11 +101,11 @@ public class EnemyMovement : MonoBehaviour
         }
     }
     
-    private float CurrentMoveSpeed => data.moveSpeed;
+    protected float CurrentMoveSpeed => data.moveSpeed;
     
     public float PatrolSpeed => data.patrolSpeed;
     
-    public void Flip(bool faceRight)
+    public virtual void Flip(bool faceRight)
     {
         // Only flip if the facing direction changed
         if (isFacingRight != faceRight)
