@@ -5,7 +5,7 @@ public class EnemyAnimator : MonoBehaviour
 {
     private Animator animator;
     
-    public void Initialize(EnemyData enemyData)
+    public virtual void Initialize(EnemyData enemyData)
     {
         animator = GetComponent<Animator>();
         if (animator == null)
@@ -21,7 +21,7 @@ public class EnemyAnimator : MonoBehaviour
         }
     }
     
-    public void SetWalking(bool isWalking)
+    public virtual void SetWalking(bool isWalking)
     {
         if (animator != null && HasParameter("isWalking"))
         {
@@ -29,7 +29,7 @@ public class EnemyAnimator : MonoBehaviour
         }
     }
     
-    public void PlayAttackAnimation()
+    public virtual void PlayAttackAnimation()
     {
         if (animator != null && HasParameter("Attack"))
         {
@@ -37,7 +37,7 @@ public class EnemyAnimator : MonoBehaviour
         }
     }
     
-    public void PlayHitAnimation()
+    public virtual void PlayHitAnimation()
     {
         if (animator != null && HasParameter("Hit"))
         {
@@ -45,7 +45,7 @@ public class EnemyAnimator : MonoBehaviour
         }
     }
     
-    public void PlayDeathAnimation()
+    public virtual void PlayDeathAnimation()
     {
         if (animator != null && HasParameter("Die"))
         {
@@ -53,7 +53,7 @@ public class EnemyAnimator : MonoBehaviour
         }
     }
     
-    private bool HasParameter(string paramName)
+    public virtual bool HasParameter(string paramName)
     {
         if (animator == null)
             return false;

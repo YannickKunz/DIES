@@ -12,12 +12,12 @@ public class EnemyAttack : MonoBehaviour
 
 public float AttackRadius => useInstanceValues ? instanceAttackRadius : (data != null ? data.attackRadius : 0.8f);
 
-    private EnemyData data;
-    private Transform attackPoint;
-    private EnemyAnimator animator;
-    private float lastAttackTime = -Mathf.Infinity;
-    
-    [SerializeField] private LayerMask playerLayer;
+    protected EnemyData data;
+    protected Transform attackPoint;
+    protected EnemyAnimator animator;
+    protected float lastAttackTime = -Mathf.Infinity;
+        
+    [SerializeField] protected LayerMask playerLayer;
     
     public void DebugAttackSetup()
     {
@@ -131,7 +131,7 @@ public float AttackRadius => useInstanceValues ? instanceAttackRadius : (data !=
     
     public float AttackDuration => 1.1f; // Total attack animation duration
     
-private void OnDrawGizmosSelected()
+protected virtual void OnDrawGizmosSelected()
 {
     // Always draw this even when the game is not running
     Transform gizmoAttackPoint = attackPoint;

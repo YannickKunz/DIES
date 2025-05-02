@@ -7,33 +7,33 @@ public class EnemyAI : MonoBehaviour
 {
 
 [Header("Instance Override Settings")]
-[SerializeField] private bool useInstanceValues = false;
+[SerializeField] protected bool useInstanceValues = false;
 [Tooltip("Override the detection range from EnemyData")]
-[SerializeField] private float instanceDetectionRange = 7f;
+[SerializeField] protected float instanceDetectionRange = 7f;
 [Tooltip("Override the attack range from EnemyData")]
-[SerializeField] private float instanceAttackRange = 1.5f;
+[SerializeField] protected float instanceAttackRange = 1.5f;
 
 private float idleStartTime = 0f;
 [SerializeField] private float maxIdleTime = 4f; // Maximum time to stay in idle before resetting
 
-public float DetectionRange => useInstanceValues ? instanceDetectionRange : (data != null ? data.detectionRange : 7f);
-public float AttackRange => useInstanceValues ? instanceAttackRange : (data != null ? data.attackRange : 1.5f);
-    private EnemyData data;
-    private Transform player;
-    private float lastPlayerDetectedTime = 0f;
-    private EnemyMovement movement;
-    private EnemyAnimator animator;
-    private EnemyAttack attack;
+public virtual float DetectionRange => useInstanceValues ? instanceDetectionRange : (data != null ? data.detectionRange : 7f);
+public virtual float AttackRange => useInstanceValues ? instanceAttackRange : (data != null ? data.attackRange : 1.5f);
+    protected EnemyData data;
+    protected Transform player;
+    protected float lastPlayerDetectedTime = 0f;
+    protected EnemyMovement movement;
+    protected EnemyAnimator animator;
+    protected EnemyAttack attack;
     
-    public enum State { Idle, Patrolling, Chasing, Attacking, TakingDamage, Dying }
-    [SerializeField] private State currentState = State.Idle;
-    
-    [SerializeField] private Transform[] patrolPoints;
-    private int currentPatrolPoint = 0;
-    private bool isWaitingAtPatrolPoint = false;
-    
-    private Coroutine patrolWaitRoutine;
-    private Coroutine attackRoutine;
+    public enum State { Idle, Patrolling, Chasing, Attacking, TakingDamage, Dying, Jumping, Climbing }
+    [SerializeField] protected State currentState = State.Idle;
+        
+    [SerializeField] protected Transform[] patrolPoints;
+    protected int currentPatrolPoint = 0;
+    protected bool isWaitingAtPatrolPoint = false;
+        
+    protected Coroutine patrolWaitRoutine;
+    protected Coroutine attackRoutine;
     
     public void Initialize(EnemyData enemyData)
     {
@@ -66,7 +66,7 @@ public float AttackRange => useInstanceValues ? instanceAttackRange : (data != n
             ChangeState(State.Idle);
     }
     
-private void Update()
+protected virtual void Update()
 {
     // Essential null checks
     if (data == null)
@@ -155,7 +155,7 @@ private void Update()
     #endif
 }
 
-    private void LateUpdate()
+    protected void LateUpdate()
 {
     // Check for emergency reset via right-click
     if (Input.GetMouseButtonDown(1)) // Right-click
@@ -180,7 +180,7 @@ private void Update()
     }
 }
     
-    private void HandleCurrentState()
+    protected void HandleCurrentState()
     {
         switch (currentState)
         {
@@ -206,7 +206,7 @@ private void Update()
         }
     }
     
-private void UpdateState(bool canSeePlayer)
+protected void UpdateState(bool canSeePlayer)
 {
     // Debug current state
     if (Time.frameCount % 60 == 0)
@@ -265,7 +265,7 @@ private void UpdateState(bool canSeePlayer)
     }
 }
     
-private void HandleIdleState()
+protected void HandleIdleState()
 {
     // If this is the first frame we're handling idle
     if (idleStartTime == 0f)
@@ -307,7 +307,7 @@ private void HandleIdleState()
     }
 }
     
-    private void HandlePatrolState()
+    protected void HandlePatrolState()
     {
         if (patrolPoints.Length == 0 || isWaitingAtPatrolPoint)
             return;
@@ -332,7 +332,7 @@ private void HandleIdleState()
         }
     }
     
-    private void HandleChaseState()
+    protected void HandleChaseState()
     {
         if (player == null || movement == null)
             return;
@@ -350,7 +350,7 @@ private void HandleIdleState()
         movement.SetMoveDirection(direction, false);
     }
     
-    private IEnumerator WaitAtPatrolPoint()
+    protected IEnumerator WaitAtPatrolPoint()
     {
         isWaitingAtPatrolPoint = true;
         movement.StopMoving();
@@ -361,7 +361,7 @@ private void HandleIdleState()
         isWaitingAtPatrolPoint = false;
     }
     
-    private void ChangeState(State newState)
+    public virtual void ChangeState(State newState)
     {
         if (currentState == newState)
             return;
@@ -419,7 +419,7 @@ private void HandleIdleState()
     }
     
 // Improved PerformAttackSequence() for reliable attacks
-private IEnumerator PerformAttackSequence()
+protected IEnumerator PerformAttackSequence()
 {
     // Always face the player when attacking
     if (player != null && movement != null)
@@ -504,11 +504,11 @@ private IEnumerator PerformAttackSequence()
 }
 
 [Header("Line of Sight Settings")]
-[SerializeField] private Vector2 eyeOffset = new Vector2(0, 0.7f); // Adjust to where the skeleton's "eyes" would be
-[SerializeField] private bool ignoreGroundForLineOfSight = true;
-[SerializeField] private Transform eyesTransform; // Assign this in the Inspector to your "eyes" child
+[SerializeField] protected Vector2 eyeOffset = new Vector2(0, 0.7f); // Adjust to where the skeleton's "eyes" would be
+[SerializeField] protected bool ignoreGroundForLineOfSight = true;
+[SerializeField] protected Transform eyesTransform; // Assign this in the Inspector to your "eyes" child
 
-private bool CanSeePlayer()
+protected bool CanSeePlayer()
 {
     if (player == null)
     {
@@ -585,7 +585,7 @@ private bool CanSeePlayer()
     }
 }
     
-private bool IsInAttackRange()
+protected bool IsInAttackRange()
 {
     if (player == null)
         return false;
@@ -601,7 +601,7 @@ private bool IsInAttackRange()
     
     return inRange;
 }
-    private void FindNearestPatrolPoint()
+    protected void FindNearestPatrolPoint()
     {
         if (patrolPoints.Length == 0)
             return;
@@ -625,7 +625,7 @@ private bool IsInAttackRange()
         currentPatrolPoint = closestIndex;
     }
     
-private void HandleDamage(float amount)
+protected void HandleDamage(float amount)
 {
     // Store previous state before changing to TakingDamage
     State previousState = currentState;
@@ -654,7 +654,7 @@ private void HandleDamage(float amount)
     Debug.Log($"{gameObject.name}: Taking damage, will resume {previousState} state in 0.5s");
 }
 
-private IEnumerator ResumeAfterDamage(State previousState)
+protected IEnumerator ResumeAfterDamage(State previousState)
 {
     yield return new WaitForSeconds(0.5f);
     
@@ -693,7 +693,7 @@ private IEnumerator ResumeAfterDamage(State previousState)
         Debug.Log($"{gameObject.name}: Not resuming after damage, state changed to {currentState}");
     }
 }
-private void ValidatePatrolPoints()
+protected void ValidatePatrolPoints()
 {
     if (patrolPoints == null || patrolPoints.Length == 0)
     {
@@ -720,11 +720,11 @@ private void ValidatePatrolPoints()
     }
 }
     
-    private void HandleDeath()
+    protected void HandleDeath()
     {
         ChangeState(State.Dying);
     }
-    private void OnDrawGizmosSelected()
+    protected void OnDrawGizmosSelected()
 {
     // Draw detection range (green)
     Gizmos.color = new Color(0, 1, 0, 0.2f);  // Transparent green
