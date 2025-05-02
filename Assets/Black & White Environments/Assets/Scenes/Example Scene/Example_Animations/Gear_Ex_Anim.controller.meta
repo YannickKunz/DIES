@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e84264bfa1b26cf42b18223c7ba81928
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 143141
+  packageName: 2D Black & White Environments
+  packageVersion: 1.3
+  assetPath: Assets/Black & White Environments/Assets/Scenes/Example Scene/Example_Animations/Gear_Ex_Anim.controller
+  uploadId: 409761
