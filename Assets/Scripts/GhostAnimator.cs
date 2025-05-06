@@ -95,7 +95,7 @@ public class GhostAnimator : EnemyAnimator
     }
     
     // Helper method to check if animator has parameter before setting
-    public bool HasParameter(string paramName)
+    public override bool HasParameter(string paramName)
     {
         if (animator == null)
             return false;
