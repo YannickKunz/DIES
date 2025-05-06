@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: f60ccb4b28540471ca04052ba4bec44c
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 5fd8973baebc64a1995f0b02921daa7c
   - enabled: 0
     path: Assets/Scenes/Outdoor_AC/level1.unity
     guid: 81e95b6196ce44f87ad89d25422b4411
@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/hosp\u0131tal_with_skeletons.unity"
     guid: c0e0e075a3f10e94aa21fe1c6ed247a4
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 2/StartMenuSceneCh2.unity
+    guid: fff71bcbf52e9420f81921b77a3730af
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 2/TrialCh2.unity
+    guid: 673c0df4f00714cab871a400aa947266
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 2/DeathSceneCh2.unity
+    guid: 01205b3f5edc44a44aa93686e2b8d200
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
