@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d3726053d2386479584433646d802777
+guid: 556eda9440286084a8d48525dc41ba67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8836008208561737783
-    second: insect_0
+      213: -1880647702164356357
+    second: pipe horizontal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: insect_0
+      name: pipe horizontal_0
       rect:
         serializedVersion: 2
-        x: 600
-        y: 325
-        width: 2539
-        height: 1712
+        x: 0
+        y: 0
+        width: 605
+        height: 284
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73012c786aecf9a70800000000000000
-      internalID: 8836008208561737783
+      spriteID: bf2c6d401e896e5e0800000000000000
+      internalID: -1880647702164356357
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      insect_0: 8836008208561737783
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
