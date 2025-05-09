@@ -9,18 +9,23 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+
+        // Gradually increase speed over time
+        speed += 0.1f * Time.deltaTime;
+
         // Enemy moves if alwaysActive is true or if the player has entered the trigger
         if ((alwaysActive || isPlayerInRange) && player != null)
         {
             // Calculate the direction to the player
             Vector3 direction = (player.position - transform.position).normalized;
-
+            // Prevent vertical movement
+            direction.y = 0f;
             // Move the enemy toward the player
             transform.position += direction * speed * Time.deltaTime;
 
             // Optional: Rotate the enemy to face the player
-            //Quaternion lookRotation = Quaternion.LookRotation(direction);
-            //transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
+            // Quaternion lookRotation = Quaternion.LookRotation(direction);
+            // transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
         }
     }
 
