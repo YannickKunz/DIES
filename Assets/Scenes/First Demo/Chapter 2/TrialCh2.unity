@@ -400,6 +400,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &92146165
 BoxCollider2D:
@@ -701,6 +703,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &156856459
 BoxCollider2D:
@@ -1736,6 +1740,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &562168735
 BoxCollider2D:
@@ -2553,6 +2559,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &704645224
 BoxCollider2D:
@@ -13422,6 +13430,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &1226079696
 BoxCollider2D:
@@ -19829,6 +19839,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &1546200769
 BoxCollider2D:
