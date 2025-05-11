@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/First Demo/Chapter 2/DeathSceneCh2.unity
     guid: 01205b3f5edc44a44aa93686e2b8d200
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/TransitionScene.unity
+    guid: 0604dcf8f09d24325943e692f1d061e3
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/Black Forest 1.unity
+    guid: 4fdb5453ac93347b0a0158e82a6d64f6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
