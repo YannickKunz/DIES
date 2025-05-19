@@ -94,6 +94,8 @@ public class DialogueManager : MonoBehaviour
         FindFirstObjectByType<Animator>().enabled = true;
         // Unfreeze x and y axis of the player
         FindFirstObjectByType<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        FindFirstObjectByType<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
 
 
 }
