@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b27efb477f3a46d4ac7caa0eb39bfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: Black Forest 1
+  gameSceneName: Intro_room
 --- !u!4 &1342078013
 Transform:
   m_ObjectHideFlags: 0

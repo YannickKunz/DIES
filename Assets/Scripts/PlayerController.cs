@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private LevelManager levelManager;
     
     [Header("Movement Settings")]
-    [SerializeField] private float runSpeed = 8f;
+    [SerializeField] public float runSpeed = 8f;
     [SerializeField] private float jumpForce = 12f;
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = 0.05f;
     [SerializeField] private bool airControl = true;
@@ -123,34 +123,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (DialogueManager.Instance != null && DialogueManager.Instance.DialogueActive)
+        return; 
         horizontalInput = Input.GetAxisRaw("Horizontal");
-        /*
-        // Jump input
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Space pressed! Grounded: " + isGrounded + ", WallSliding: " + isWallSliding + ", CanDoubleJump: " + canDoubleJump);
-
-            if (isGrounded)
-            {
-                Jump();
-            }
-            else if (isWallSliding)
-            {
-                WallJump();
-            }
-            else if (canDoubleJump)
-            {
-                DoubleJump();
-            }
-        }
-        
-        // Dash input
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isWallSliding)
-        {
-            StartCoroutine(DashCooldown());
-        }
-        */
-        // Reset jump animation when not jumping
+       
         if (Input.GetKeyDown(KeyCode.R)) // R for Reset
         {
             Debug.Log("Movement reset requested");
