@@ -46,12 +46,14 @@ public class DialogueManager : MonoBehaviour
     dialogPanel.SetActive(true);
 
     // disable player
-    FindFirstObjectByType<PlayerController>().enabled = false;
-    FindFirstObjectByType<PlayerMovement>().enabled = false;
-    FindFirstObjectByType<PlayerMovement>().runSpeed = 0f;
-    FindFirstObjectByType<PlayerController>().runSpeed = 0f;
+    //FindFirstObjectByType<PlayerController>().enabled = false;
+    //FindFirstObjectByType<PlayerMovement>().enabled = false;
+    //FindFirstObjectByType<PlayerMovement>().runSpeed = 0f;
+    //FindFirstObjectByType<PlayerController>().runSpeed = 0f;
     FindFirstObjectByType<AudioSource>().enabled = false;
     FindFirstObjectByType<Animator>().enabled = false;
+    // Freeze x and y axis of the player
+    FindFirstObjectByType<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     ShowLine();
 }
 
@@ -84,13 +86,15 @@ public class DialogueManager : MonoBehaviour
     {
         dialogPanel.SetActive(false);
 
-        // re‑enable player
-        FindFirstObjectByType<PlayerController>().enabled = true;
-        FindFirstObjectByType<PlayerMovement>().enabled = true;
-        FindFirstObjectByType<PlayerController>().runSpeed = 10f;
-        FindFirstObjectByType<PlayerMovement>().runSpeed = 10f;
+        //FindFirstObjectByType<PlayerController>().enabled = true;
+        //FindFirstObjectByType<PlayerMovement>().enabled = true;
+        //FindFirstObjectByType<PlayerController>().runSpeed = 10f;
+        //FindFirstObjectByType<PlayerMovement>().runSpeed = 10f;
         FindFirstObjectByType<AudioSource>().enabled = true;
         FindFirstObjectByType<Animator>().enabled = true;
+        // Unfreeze x and y axis of the player
+        FindFirstObjectByType<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+
 
 }
 }
