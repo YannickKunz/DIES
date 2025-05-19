@@ -15,6 +15,7 @@ TagManager:
   - Invisible
   - Canon
   - Ghost
+  - Mushroom
   layers:
   - Default
   - TransparentFX
