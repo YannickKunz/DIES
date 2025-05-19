@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f4a4d98fd072cf94abe741cde02a8ef8
+guid: 0799bb0868742964193134cf73859cfe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4291904676911801099
-    second: pipe_vertical_0
+      213: -7775354525511083594
+    second: mushrrom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipe_vertical_0
+      name: mushrrom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 305
-        height: 794
+        width: 920
+        height: 690
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fc95d29f671074c0800000000000000
-      internalID: -4291904676911801099
+      spriteID: 6b99f203144681490800000000000000
+      internalID: -7775354525511083594
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pipe_vertical_0: -4291904676911801099
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
