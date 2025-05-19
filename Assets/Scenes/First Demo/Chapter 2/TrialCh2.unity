@@ -21555,7 +21555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82cebc5ace8484a789d399a5da6086ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSceneName: Intro_room_2
+  deathSceneName: StartMenuSceneCh3
   flashlightDamager: {fileID: 276548037}
   lightVisual: {fileID: 1724389875}
   attackInputName: Fire1
