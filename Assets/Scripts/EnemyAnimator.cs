@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyAnimator : MonoBehaviour
 {
-    private Animator animator;
+    protected Animator animator;
     
     public virtual void Initialize(EnemyData enemyData)
     {

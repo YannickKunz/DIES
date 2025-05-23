@@ -12,8 +12,8 @@ public class EnemyMovement : MonoBehaviour
     protected bool isGrounded;
     protected EnemyAnimator animator;
     
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] protected LayerMask groundLayer;
+    [SerializeField] protected float groundCheckRadius = 0.2f;
         
     public void Initialize(EnemyData enemyData)
     {
@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
         SetupGroundCheck();
     }
     
-    private void SetupGroundCheck()
+    protected void SetupGroundCheck()
     {
         if (!groundCheck)
         {
@@ -90,10 +90,10 @@ public class EnemyMovement : MonoBehaviour
         }
     }
     
-    public void StopMoving()
+    public virtual void StopMoving()
     {
         moveDirection = Vector2.zero;
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        if (rb != null) rb.linearVelocity = Vector2.zero;
         
         if (animator)
         {

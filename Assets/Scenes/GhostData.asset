@@ -15,8 +15,8 @@ MonoBehaviour:
   enemyName: Ghost
   maxHealth: 20
   hitEffectPrefab: {fileID: 0}
-  moveSpeed: 2
-  patrolSpeed: 1
+  moveSpeed: 7
+  patrolSpeed: 7
   patrolStopDuration: 1
   groundCheckRadius: 0.2
   detectionRange: 7

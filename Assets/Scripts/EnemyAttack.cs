@@ -80,7 +80,7 @@ public float AttackRadius => useInstanceValues ? instanceAttackRadius : (data !=
         }
     }
     
-    public void PerformAttack()
+    public virtual void PerformAttack()
     {
         if (!CanAttack)
             return;

@@ -25,7 +25,7 @@ public virtual float AttackRange => useInstanceValues ? instanceAttackRange : (d
     protected EnemyAnimator animator;
     protected EnemyAttack attack;
     
-    public enum State { Idle, Patrolling, Chasing, Attacking, TakingDamage, Dying, Jumping, Climbing }
+    public enum State { Idle, Patrolling, Chasing, Attacking, TakingDamage, Dying, Jumping, Climbing, Floating }
     [SerializeField] protected State currentState = State.Idle;
         
     [SerializeField] protected Transform[] patrolPoints;
@@ -35,8 +35,7 @@ public virtual float AttackRange => useInstanceValues ? instanceAttackRange : (d
     protected Coroutine patrolWaitRoutine;
     protected Coroutine attackRoutine;
     
-    public void Initialize(EnemyData enemyData)
-    {
+    public virtual void Initialize(EnemyData enemyData)    {
         data = enemyData;
         
         // Get components
@@ -180,7 +179,7 @@ protected virtual void Update()
     }
 }
     
-    protected void HandleCurrentState()
+    protected virtual void HandleCurrentState()
     {
         switch (currentState)
         {
@@ -202,6 +201,9 @@ protected virtual void Update()
                 
             case State.TakingDamage:
                 // Handled by event
+                break;
+            case State.Floating:
+                // To be handled by GhostAI
                 break;
         }
     }
@@ -261,6 +263,13 @@ protected void UpdateState(bool canSeePlayer)
                 else
                     ChangeState(State.Idle);
             }
+            break;
+        case State.Floating:
+            // leave Floating when we lose sight long enough, or reach attack range
+            if (!canSeePlayer && Time.time - lastPlayerDetectedTime > data.chaseMemoryDuration)
+                ChangeState(patrolPoints.Length > 0 ? State.Patrolling : State.Idle);
+            else if (IsInAttackRange() && attack != null && attack.CanAttack)
+                ChangeState(State.Attacking);
             break;
     }
 }
@@ -332,7 +341,7 @@ protected void HandleIdleState()
         }
     }
     
-    protected void HandleChaseState()
+    protected virtual void HandleChaseState()
     {
         if (player == null || movement == null)
             return;

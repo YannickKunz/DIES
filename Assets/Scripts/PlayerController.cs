@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
     
     // State variables
     private Rigidbody2D rb;
-    private Animator animator;
-    private bool isGrounded;
+    public Animator animator;
+    public bool IsGrounded { get; private set; } // Changed from private bool isGrounded
     private bool wasGrounded;
     private bool canDoubleJump = true;
     private bool isWallSliding = false;
@@ -128,9 +128,9 @@ public class PlayerController : MonoBehaviour
         // Jump input
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space pressed! Grounded: " + isGrounded + ", WallSliding: " + isWallSliding + ", CanDoubleJump: " + canDoubleJump);
+            Debug.Log("Space pressed! Grounded: " + IsGrounded + ", WallSliding: " + isWallSliding + ", CanDoubleJump: " + canDoubleJump);
 
-            if (isGrounded)
+            if (IsGrounded)
             {
                 Jump();
             }
@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(transform.localScale.x * dashForce, 0);
             }
-            else if (isGrounded || airControl)
+            else if (IsGrounded || airControl)
             {
                 // Limit fall speed
                 if (rb.linearVelocity.y < -limitFallSpeed)
@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour
             }
             
             // Handle wall sliding
-            if (isWall && !isGrounded)
+            if (isWall && !IsGrounded)
             {
                 if (!oldWallSliding && rb.linearVelocity.y < 0 || isDashing)
                 {
@@ -235,16 +235,16 @@ public class PlayerController : MonoBehaviour
 
     void CheckGrounded()
     {
-        wasGrounded = isGrounded;
-        bool wasGroundedBefore = isGrounded;
-        isGrounded = false;
+        wasGrounded = IsGrounded;
+        bool wasGroundedBefore = IsGrounded;
+        IsGrounded = false;
         
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, groundLayer);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
-                isGrounded = true;
+                IsGrounded = true;
                 
                 // Debug.Log the object that's causing us to be grounded
                 if (!wasGroundedBefore)
@@ -272,12 +272,12 @@ public class PlayerController : MonoBehaviour
         }
         
         // Log when grounded state changes
-        if (wasGroundedBefore != isGrounded)
+        if (wasGroundedBefore != IsGrounded)
         {
-            Debug.Log("Grounded state changed: " + (isGrounded ? "GROUNDED" : "IN AIR"));
+            Debug.Log("Grounded state changed: " + (IsGrounded ? "GROUNDED" : "IN AIR"));
         }
         
-        if (!isGrounded && wasGrounded)
+        if (!IsGrounded && wasGrounded)
         {
             OnFallEvent.Invoke();
         }
@@ -287,7 +287,7 @@ public class PlayerController : MonoBehaviour
     {
         isWall = false;
         
-        if (!isGrounded)
+        if (!IsGrounded)
         {
             Collider2D[] collidersWall = Physics2D.OverlapCircleAll(wallCheck.position, groundCheckRadius, groundLayer);
             for (int i = 0; i < collidersWall.Length; i++)
@@ -359,7 +359,7 @@ void HandleWallJumpDistance()
             animator.SetBool("JumpUp", true);
         }
         
-        isGrounded = false;
+        IsGrounded = false;
         rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         canDoubleJump = true;
         
@@ -424,7 +424,7 @@ void HandleWallJumpDistance()
         // Handle jump input
         if (jump)
         {
-            if (isGrounded)
+            if (IsGrounded)
             {
                 Jump();
             }

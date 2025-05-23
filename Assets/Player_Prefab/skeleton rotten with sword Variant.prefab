@@ -32,6 +32,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 515859699681301881, guid: 743aab17fe6180641846955f3b52f709, type: 3}
+      propertyPath: m_Size.y
+      value: 13.830461
+      objectReference: {fileID: 0}
+    - target: {fileID: 515859699681301881, guid: 743aab17fe6180641846955f3b52f709, type: 3}
+      propertyPath: m_Offset.y
+      value: 6.829003
+      objectReference: {fileID: 0}
     - target: {fileID: 650447656193087040, guid: 743aab17fe6180641846955f3b52f709, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -375,12 +383,14 @@ MonoBehaviour:
   useInstanceValues: 1
   instanceDetectionRange: 18
   instanceAttackRange: 9.32
+  maxIdleTime: 4
   currentState: 0
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
   eyeOffset: {x: 0, y: 0.7}
   ignoreGroundForLineOfSight: 1
+  eyesTransform: {fileID: 0}
 --- !u!114 &535517274880517557
 MonoBehaviour:
   m_ObjectHideFlags: 0
