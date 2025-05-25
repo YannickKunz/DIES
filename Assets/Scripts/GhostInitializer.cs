@@ -34,8 +34,9 @@ public class GhostInitializer : MonoBehaviour
             return;
         }
         
-        // Also get GhostAnimator to initialize it directly
+        // Also get GhostAnimator and EnemyHealth to initialize them directly
         GhostAnimator ghostAnimator = GetComponent<GhostAnimator>();
+        EnemyHealth enemyHealth = GetComponent<EnemyHealth>();
         
         if (ghostData != null)
         {
@@ -51,6 +52,17 @@ public class GhostInitializer : MonoBehaviour
             {
                 ghostAnimator.Initialize(ghostData);
             }
+            
+            // 🏥 IMPORTANT: Initialize EnemyHealth with data!
+            if (enemyHealth != null)
+            {
+                Debug.Log($"🏥 {gameObject.name}: Initializing EnemyHealth with GhostData");
+                enemyHealth.Initialize(ghostData);
+            }
+            else
+            {
+                Debug.LogError($"❌ {gameObject.name}: No EnemyHealth component found!");
+            }
         }
         else if (allowFallbackMode)
         {
@@ -65,6 +77,17 @@ public class GhostInitializer : MonoBehaviour
             if (ghostAnimator != null)
             {
                 ghostAnimator.Initialize(null);
+            }
+            
+            // 🏥 IMPORTANT: Initialize EnemyHealth even with null data (uses fallback)
+            if (enemyHealth != null)
+            {
+                Debug.Log($"🏥 {gameObject.name}: Initializing EnemyHealth with fallback values");
+                enemyHealth.Initialize(null);
+            }
+            else
+            {
+                Debug.LogError($"❌ {gameObject.name}: No EnemyHealth component found!");
             }
         }
         else

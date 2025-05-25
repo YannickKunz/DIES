@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private LevelManager levelManager;
     
     [Header("Movement Settings")]
-    [SerializeField] private float runSpeed = 8f;
+    [SerializeField] public float runSpeed = 8f;
     [SerializeField] private float jumpForce = 12f;
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = 0.05f;
     [SerializeField] private bool airControl = true;
@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogWarning("WallCheck created automatically. Consider assigning it properly in inspector.");
         }
 
-            if (groundCheck == null){
+        if (groundCheck == null){
         Debug.LogError("Ground check transform not assigned!");
         GameObject groundCheckObj = new GameObject("GroundCheck");
         groundCheckObj.transform.parent = transform;
@@ -123,6 +123,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (DialogueManager.Instance != null && DialogueManager.Instance.DialogueActive)
+        return; 
         horizontalInput = Input.GetAxisRaw("Horizontal");
         /*
         // Jump input
@@ -151,6 +153,7 @@ public class PlayerController : MonoBehaviour
         }
         */
         // Reset jump animation when not jumping
+       
         if (Input.GetKeyDown(KeyCode.R)) // R for Reset
         {
             Debug.Log("Movement reset requested");

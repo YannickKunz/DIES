@@ -6,26 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Forest/StartMenuScene.unity
-    guid: c9b35915165964cc5be291d1c8835b96
+    path: Assets/Scenes/First Demo/Chapter 1/StartMenuScene.unity
+    guid: 48a760428628e5444ad365450a8808c2
   - enabled: 1
-    path: Assets/Scenes/Forest/Black Forest 1.unity
-    guid: 04cbe00065a8fa44a8a21c7f87f85f12
+    path: Assets/Scenes/First Demo/Chapter 1/Intro_room.unity
+    guid: 6690c50b422dbf74dbb61b9cdfa9992a
   - enabled: 1
-    path: Assets/Scenes/Forest/DeathScene.unity
-    guid: f60ccb4b28540471ca04052ba4bec44c
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 5fd8973baebc64a1995f0b02921daa7c
-  - enabled: 0
-    path: Assets/Scenes/Outdoor_AC/level1.unity
-    guid: 81e95b6196ce44f87ad89d25422b4411
-  - enabled: 0
-    path: Assets/Scenes/level2.unity
-    guid: 49999660ae731ed47b8e78e936e5dbfb
-  - enabled: 1
-    path: "Assets/Scenes/hosp\u0131tal_with_skeletons.unity"
-    guid: c0e0e075a3f10e94aa21fe1c6ed247a4
+    path: Assets/Scenes/First Demo/Chapter 1/DeathScene.unity
+    guid: d04fb07ebae52104e8f8c02212fdde9e
   - enabled: 1
     path: Assets/Scenes/First Demo/Chapter 2/StartMenuSceneCh2.unity
     guid: fff71bcbf52e9420f81921b77a3730af
@@ -35,6 +23,47 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/First Demo/Chapter 2/DeathSceneCh2.unity
     guid: 01205b3f5edc44a44aa93686e2b8d200
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 3/StartMenuSceneCh3.unity
+    guid: 4c688e04f913a714bb6960e9f8e6b89f
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 3/Intro_room_2.unity
+    guid: 99f5bebaeea130a4fbac13e81b79dd99
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/StartMenuSceneCh4.unity
+    guid: 82cfafb7fde354d089326915ca10a9d2
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/DeathSceneCh4.unity
+    guid: cd9d980d99d2e44f2a979f7909be7382
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/TrialCh4.unity
+    guid: 5339ac9b0d4a342e3a15fae299ea993b
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/Black Forest 1.unity
+    guid: 4fdb5453ac93347b0a0158e82a6d64f6
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 4/TransitionScene.unity
+    guid: 0604dcf8f09d24325943e692f1d061e3
+  - enabled: 1
+    path: Assets/Scenes/Intro/Intro_room.unity
+    guid: a7e6426d460072944b926182122106a6
+  - enabled: 1
+    path: Assets/Scenes/Intro/Intro_room_2.unity
+    guid: 086af83d2965240a1a852ab4d0a84d0f
+  - enabled: 1
+    path: "Assets/Scenes/First Demo/Chapter 5/hosp\u0131tal_with_skeletons.unity"
+    guid: 0f2a270e5e6b80341867f736b8179a46
+  - enabled: 1
+    path: "Assets/Scenes/hosp\u0131tal_with_realghosts.unity"
+    guid: b46a94bb6dc9d294c9507a913f3d1d34
+  - enabled: 1
+    path: Assets/Scenes/HospitalCell_AC/Hospital Cell 8.unity
+    guid: a2b72dee0ebab44f9b4d22dedba45f25
+  - enabled: 1
+    path: Assets/Scenes/Demonic_Scene.unity
+    guid: ebd9c18687704824b9fb9abd9d2aca92
+  - enabled: 1
+    path: Assets/Scenes/Gallery_like_scene.unity
+    guid: 318be6b73bf0bac4e86d43dbfa5ddd16
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

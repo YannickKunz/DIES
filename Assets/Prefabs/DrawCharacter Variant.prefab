@@ -47,9 +47,9 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.268
+  m_FalloffIntensity: 0.101
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.38
+  m_Intensity: 2.86
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -98,11 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.41
+      value: 276.98
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.26
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -146,7 +146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2236336628737428268, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: life
-      value: 20
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236336628737428268, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 456
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -158,6 +162,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1377240496476148, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2918505355871749754}
+    - targetCorrespondingSourceObject: {fileID: 1377240496476148, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686542754851952801}
   m_SourcePrefab: {fileID: 100100000, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
 --- !u!1 &7919842289455518156 stripped
 GameObject:
@@ -179,6 +186,21 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1686542754851952801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919842289455518156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ca2a1c32cb08244b86515876d89fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalFragmentsCollected: 0
+  fragmentsRequiredForPortal: 5
+  showDebugLogs: 1
 --- !u!4 &7925354986288929350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4660076192433278, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}

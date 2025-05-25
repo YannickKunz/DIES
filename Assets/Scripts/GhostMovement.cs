@@ -93,7 +93,7 @@ public class GhostMovement : EnemyMovement
     
     // Flipping control variables
     private float lastFlipTime = 0f;
-    
+
     // References
     private GhostAI ghostAI; // Reference to GhostAI for triggering jumps
     private GhostData ghostData;
@@ -203,13 +203,13 @@ public class GhostMovement : EnemyMovement
         // Call ground check only if we have the necessary components
         if (groundCheckTransform != null)
         {
-            CheckGhostGrounded();
+        CheckGhostGrounded();
         }
         
         // Safely apply movement
         if (rb != null)
         {
-            rb.linearVelocity = new Vector2(moveDirection.x * CurrentMoveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveDirection.x * CurrentMoveSpeed, rb.linearVelocity.y);
         }
     
         Debug.DrawRay(transform.position, moveDirection * 1.5f, Color.blue);
@@ -602,7 +602,7 @@ public class GhostMovement : EnemyMovement
     {
         rb.gravityScale = 0; // Keep gravity off for hovering
         isFloating = false; // Important to reset this if old float logic might run
-        _spline.Clear();
+         _spline.Clear();
         _splineIdx = 0;
         _isReachingInitialSplineWaypoint = false;
         

@@ -19,8 +19,8 @@ public class GhostAnimator : EnemyAnimator
         foreach (AnimatorControllerParameter param in animator.parameters)
         {
             Debug.Log($"  - {param.name} ({param.type})");
-        }
-        
+    }
+    
         // Check for common ghost animation parameters
         CheckAnimationParameters();
     }

@@ -201,7 +201,7 @@ public class GhostAI : MonoBehaviour
         
         // Calculate distance
         currentPlayerDistance = Vector2.Distance(transform.position, player.position);
-        
+            
         // Check if player is within detection range
         if (currentPlayerDistance <= DetectionRange)
         {
@@ -294,10 +294,10 @@ public class GhostAI : MonoBehaviour
                     if (ShouldAttack())
                     {
                         // Continue attacking
-                        StartCoroutine(PerformAttackSequence());
-                    }
+                    StartCoroutine(PerformAttackSequence());
+                }
                     else if (ShouldStartChasing())
-                    {
+                {
                         ChangeState(GhostState.Chasing);
                     }
                     else if (patrolPoints != null && patrolPoints.Length > 0)
@@ -363,7 +363,7 @@ public class GhostAI : MonoBehaviour
     }
     
     private bool ShouldAttack()
-    {
+        {
         return playerCurrentlyVisible && currentPlayerDistance <= AttackRange && 
                ghostAttack != null && ghostAttack.CanAttack;
     }
@@ -376,9 +376,9 @@ public class GhostAI : MonoBehaviour
     }
     
     private bool ShouldStartPatrolling()
-    {
+            {
         return patrolPoints != null && patrolPoints.Length > 0;
-    }
+            }
     
     private bool RemembersPlayer()
     {
@@ -447,27 +447,27 @@ public class GhostAI : MonoBehaviour
             currentPatrolIndex = 0;
         }
         
-        Transform target = patrolPoints[currentPatrolIndex];
+            Transform target = patrolPoints[currentPatrolIndex];
         if (target == null)
-        {
+            {
             DebugLog("Current patrol target is null, moving to next");
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
             return;
         }
         
-        float distanceToTarget = Vector2.Distance(transform.position, target.position);
-        
+                float distanceToTarget = Vector2.Distance(transform.position, target.position);
+                
         // Check if we've reached the current patrol point (larger distance for reliability)
         if (distanceToTarget < 3.0f) // Increased from 2.0f for better reliability
-        {
+                {
             DebugLog($"Reached patrol point {currentPatrolIndex}, moving to next");
-            currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
-            
+                    currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
+                    
             // Stop current path and wait a moment before requesting new path
             if (movement != null && movement.IsFollowingAStarPath)
             {
                 movement.StopAPath();
-            }
+                }
             
             // Don't immediately request new path - wait for next update cycle
             return;
@@ -486,7 +486,7 @@ public class GhostAI : MonoBehaviour
     {
         if (player == null)
         {
-            ChangeState(GhostState.Idle);
+                ChangeState(GhostState.Idle);
             return;
         }
         
@@ -561,8 +561,8 @@ public class GhostAI : MonoBehaviour
                 StopAllCoroutines();
                 break;
         }
-    }
-    
+        }
+        
     private void EnterState(GhostState state)
     {
         switch (state)
@@ -635,7 +635,7 @@ public class GhostAI : MonoBehaviour
         yield return new WaitForSeconds(ghostAttack.AttackDuration);
         
         DebugLog("Attack sequence completed - checking next state");
-    }
+        }
     
     private void FindNearestPatrolPoint()
     {
@@ -646,7 +646,7 @@ public class GhostAI : MonoBehaviour
         int closestIndex = 0;
         
         for (int i = 0; i < patrolPoints.Length; i++)
-        {
+    {
             if (patrolPoints[i] == null) continue;
             
             float distance = Vector2.Distance(transform.position, patrolPoints[i].position);
@@ -659,8 +659,8 @@ public class GhostAI : MonoBehaviour
         
         currentPatrolIndex = closestIndex;
         DebugLog($"Nearest patrol point is index {closestIndex}");
-    }
-    
+        }
+        
     private void ValidatePatrolPoints()
     {
         if (patrolPoints == null || patrolPoints.Length == 0)
@@ -673,13 +673,13 @@ public class GhostAI : MonoBehaviour
         for (int i = 0; i < patrolPoints.Length; i++)
         {
             if (patrolPoints[i] == null)
-            {
+        {
                 Debug.LogWarning($"{gameObject.name}: Patrol point at index {i} is null!");
             }
             else
-            {
+        {
                 hasValidPoints = true;
-            }
+        }
         }
         
         if (!hasValidPoints)

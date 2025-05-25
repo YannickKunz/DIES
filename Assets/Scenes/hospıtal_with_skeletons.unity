@@ -11150,7 +11150,7 @@ GameObject:
   - component: {fileID: 177479655}
   - component: {fileID: 177479654}
   - component: {fileID: 177479656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11623,7 +11623,7 @@ GameObject:
   - component: {fileID: 299122527}
   - component: {fileID: 299122526}
   - component: {fileID: 299122529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree 1 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -32469,7 +32469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661829336}
   - component: {fileID: 1661829335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mist (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

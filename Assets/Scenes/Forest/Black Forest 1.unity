@@ -2270,6 +2270,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 0
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!114 &439579395
 MonoBehaviour:
@@ -8752,6 +8754,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!61 &704645224
 BoxCollider2D:
@@ -15834,6 +15838,8 @@ MonoBehaviour:
   maxHpMax: 2
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!1 &1154807722
 GameObject:
@@ -23007,6 +23013,8 @@ MonoBehaviour:
   maxHpMax: 5
   currentHp: 1
   damageFlashDuration: 0.1
+  retreatDuration: 5
+  retreatSpeedMultiplier: 1.5
   isDying: 0
 --- !u!1 &1539223743
 GameObject:
@@ -27918,7 +27926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a97553f4d220114cb7e6e099936f61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: "hosp\u0131tal"
+  nextSceneName: Black Forest 2
 --- !u!50 &1547983873
 Rigidbody2D:
   serializedVersion: 5

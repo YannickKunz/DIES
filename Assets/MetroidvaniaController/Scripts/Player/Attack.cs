@@ -54,12 +54,26 @@ public class Attack : MonoBehaviour
     public void DoDashDamage()
     {
         dmgValue = Mathf.Abs(dmgValue);
-        Collider2D[] collidersEnemies = Physics2D.OverlapCircleAll(attackCheck.position, 0.9f);
+        // 🔧 TEMPORARILY INCREASED ATTACK RANGE FOR TESTING
+        float testAttackRadius = 1.5f; // Increased from 0.9f
+        Collider2D[] collidersEnemies = Physics2D.OverlapCircleAll(attackCheck.position, testAttackRadius);
+        
+        // 🔍 DEBUG: Log attack attempt
+        Debug.Log($"=== ATTACK DEBUG START ===");
+        Debug.Log($"Attack position: {attackCheck.position}");
+        Debug.Log($"Attack radius: {testAttackRadius}f (INCREASED FOR TESTING)");
+        Debug.Log($"Total colliders detected: {collidersEnemies.Length}");
         
         for (int i = 0; i < collidersEnemies.Length; i++)
         {
-            if (collidersEnemies[i].gameObject.CompareTag("Enemy"))
+            // 🔍 DEBUG: Log each detected collider
+            Debug.Log($"Collider {i}: {collidersEnemies[i].name} - Tag: '{collidersEnemies[i].tag}' - Layer: {LayerMask.LayerToName(collidersEnemies[i].gameObject.layer)}");
+            
+            // Check for both Enemy and Demon tags
+            if (collidersEnemies[i].gameObject.CompareTag("Enemy") || collidersEnemies[i].gameObject.CompareTag("Demon") || collidersEnemies[i].gameObject.CompareTag("Ghost"))
             {
+                Debug.Log($"✅ {collidersEnemies[i].name} has valid tag for damage!");
+                
                 // Adjust damage direction 
                 if (collidersEnemies[i].transform.position.x - transform.position.x < 0)
                 {
@@ -70,18 +84,30 @@ public class Attack : MonoBehaviour
                 Vector3 hitPosition = transform.position;
                 DamageInfo damageInfo = new DamageInfo(Mathf.Abs(dmgValue), hitPosition);
                 
+                Debug.Log($"🎯 Attempting to damage {collidersEnemies[i].name} with {Mathf.Abs(dmgValue)} damage");
+                
                 // Try to get EnemyHealth component directly
                 EnemyHealth health = collidersEnemies[i].GetComponent<EnemyHealth>();
                 if (health != null)
                 {
-                    Debug.Log($"Direct hit on {collidersEnemies[i].name} with damage {dmgValue}");
-                    health.TakeDamage(dmgValue, hitPosition);
+                    Debug.Log($"✅ Found EnemyHealth component on {collidersEnemies[i].name} - Calling TakeDamage directly");
+                    health.TakeDamage(Mathf.Abs(dmgValue), hitPosition);
+                    Debug.Log($"✅ TakeDamage called successfully on {collidersEnemies[i].name}");
                 }
                 else
                 {
+                    // Check what components the object actually has
+                    Component[] allComponents = collidersEnemies[i].GetComponents<Component>();
+                    Debug.Log($"❌ No EnemyHealth found on {collidersEnemies[i].name}. Components found:");
+                    foreach (Component comp in allComponents)
+                    {
+                        Debug.Log($"    - {comp.GetType().Name}");
+                    }
+                    
                     // Fall back to SendMessage with different options
-                    Debug.Log($"Sending damage message to {collidersEnemies[i].name}");
+                    Debug.Log($"🔄 Trying SendMessage to {collidersEnemies[i].name}");
                     collidersEnemies[i].SendMessage("ApplyDamage", damageInfo, SendMessageOptions.DontRequireReceiver);
+                    Debug.Log($"📤 SendMessage sent to {collidersEnemies[i].name}");
                 }
                 
                 // Only shake camera if it exists and has the component
@@ -92,16 +118,22 @@ public class Attack : MonoBehaviour
                         cameraFollow.ShakeCamera();
                 }
             }
+            else
+            {
+                Debug.Log($"❌ {collidersEnemies[i].name} has invalid tag '{collidersEnemies[i].tag}' - skipping damage");
+            }
         }
+        
+        Debug.Log($"=== ATTACK DEBUG END ===");
     }
     
     void OnDrawGizmosSelected()
     {
-        // Visualize attack range
+        // Visualize attack range - UPDATED FOR TESTING
         if (attackCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(attackCheck.position, 0.9f);
+            Gizmos.DrawWireSphere(attackCheck.position, 1.5f); // Updated to match test radius
         }
     }
 }

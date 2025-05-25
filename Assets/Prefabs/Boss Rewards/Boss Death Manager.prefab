@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7247874847861974825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3807817523653714377}
+  - component: {fileID: 4197605436682076137}
+  m_Layer: 0
+  m_Name: Boss Death Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3807817523653714377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247874847861974825}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.952457, y: 2.2957275, z: -0.045381375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4197605436682076137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247874847861974825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff16149f1cd2e4ea553065adf392b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: {fileID: 0}
+  bossName: Demon Boss
+  fragmentSpawnPosition: {x: 343.49, y: 1.91, z: -0.98}
+  portalSpawnPosition: {x: 353.18, y: 3.11, z: -0.32}
+  memoryFragmentPrefab: {fileID: 8317498829354850703, guid: 62db69fb14e667e4ca3f07a2419156f9, type: 3}
+  portalPrefab: {fileID: 8893893829156313999, guid: 2b978c3ede7429647b82663526510880, type: 3}
+  spawnDelay: 1
+  showSpawnEffects: 1
+  spawnEffect: {fileID: 0}
+  enableDebugLogs: 1
+  showSpawnPositions: 1
