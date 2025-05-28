@@ -5685,7 +5685,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1309005264424005370, guid: 28cda020aafb2714ca97d67c41caef31, type: 3}
       propertyPath: nextScene
-      value: level2
+      value: StartMenuSceneCh2
       objectReference: {fileID: 0}
     - target: {fileID: 1309005264424005370, guid: 28cda020aafb2714ca97d67c41caef31, type: 3}
       propertyPath: levelTimeInSeconds
@@ -5697,7 +5697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1309005264424005372, guid: 28cda020aafb2714ca97d67c41caef31, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1309005264424005373, guid: 28cda020aafb2714ca97d67c41caef31, type: 3}
       propertyPath: m_LocalPosition.x
