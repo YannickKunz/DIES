@@ -98,7 +98,7 @@ public class TextScroller : MonoBehaviour
         if (!isScrolling || skipInitiated) return;
 
         // Move text downwards
-        textRectTransform.anchoredPosition -= new Vector2(0, scrollSpeed * Time.deltaTime);
+        textRectTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
 
         // Check if scrolling is finished
         // (i.e., top of text has passed below the target Y position)
