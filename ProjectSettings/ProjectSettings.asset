@@ -673,11 +673,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 2bc6f3e9-4dbc-4640-b89c-441ff6611b90
+  cloudProjectId: b6859372-47dd-4c29-944f-d58342f03cee
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: projectDIES
-  organizationId: asugan007
+  organizationId: chukobo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
