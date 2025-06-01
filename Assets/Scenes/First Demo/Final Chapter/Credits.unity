@@ -599,9 +599,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -426.87708, y: -7853.58}
-  m_SizeDelta: {x: 142.2458, y: 7853.5796}
-  m_Pivot: {x: 0.5, y: 9.313226e-10}
+  m_AnchoredPosition: {x: -401.5, y: -8362.992}
+  m_SizeDelta: {x: 193, y: 8175.5645}
+  m_Pivot: {x: 0.5, y: -0.022924881}
 --- !u!114 &888344179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,21 +623,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Echoes of Sanity\n\n\n\n\n\n\n\n\n\n\r\nDeveloped By:\r\nSirius Sagittarius
-    Saints\n\n\n\n\n\n\n\n\n\n\r\nNarrative\r\nInitial Story Draft: Yannick, Yann,
-    Cem, Andr\xE9\nNarrative Design & Integration: Andr\xE9\n\n\r\n\nArt & Visuals\r\nMain
-    Characters Concept & Design: Cem\nMain Characters Art: Cem and his cousin\nEnvironment
-    & Ennemies Art (Forest) : Andr\xE9\nAI-Generated Art & Concepts: Cem, Yann\nAsset
-    Integration: Cem, Yann, Andr\xE9\nVisual Effects (VFX): Andr\xE9, Cem\n\r\n\n\nDesign\r\nLevel
-    Design & Implementation (Core Levels): Andr\xE9, Cem\nIntro Level Design & Implementation:
-    Yann\nUI Design (Title, Menus, Game Flow Screens): Andr\xE9\n\n\n\nProgramming
-    & Logic\r\nEnemy AI & Systems: Cem, Andr\xE9\nCharacter Controller (Refinement
-    & Integration): Yann, Cem\nScene Management & Transition System: Andr\xE9\nDialogue
-    System Programming: Yannick\r\n\n\n\r\nAudio\r\nMusic Composition & Recording:
-    Andr\xE9\nSound Design & Foley: Andr\xE9\nAudio Implementation: Andr\xE9\n\n\n\r\nTools
-    & Technologies\r\nMade with Unity\n\n\n\r\nExternal Assets\r\n\"Forest Environment
-    Pack\" by [Creator Name] (Unity Asset Store)\n\n\n\r\nSpecial Thanks to \r\nOur
-    Mentor: Maurizio,\nthe Goddess Athena for her blessings,\nAnd our Families and
-    Friends for their support and feedback.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
+    Saints\n\n\n\n\n\n\n\n\n\n\r\nNarrative & Story\r\nYannick, Yann, Cem, Andr\xE9\n\n\n\r\n\n\n\n\n\n\n\n\n\n\nArt
+    & Visuals\r\nCharacter Design & Art: Cem, Cem\u2019s cousin\nEnvironment & Enemies
+    Art (Forest) : Andr\xE9\nAI-Generated Art & Concepts: Cem, Yann, Yannick\nVisual
+    Effects (VFX): Andr\xE9, Cem\n\r\n\n\n\n\nDesign\r\nLevel Design: Andr\xE9, Cem,
+    Yann\nUI Design: Andr\xE9\n\n\n\n\nProgramming & Logic\r\nAndr\xE9, Cem, Yann,
+    Yannick\r\n\n\n\r\nAudio\r\nMusic Composition & Recording: Andr\xE9\nAudio Implementation:
+    Andr\xE9\n\n\n\r\n\nTools & Technologies\r\nMade with Unity\n\n\n\r\nExternal
+    Assets\r\n\"Forest Environment Pack\" by [Creator Name] (Unity Asset Store)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\nSpecial
+    Thanks to \r\nMaurizio, for his guidance, \nthe Goddess Athena for her blessings,\nAnd
+    our Families and Friends for their support and feedback.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
     you for playing! \r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c9b19fc411591f4bb7e91c510988143, type: 2}
@@ -703,7 +698,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -456.8026, y: -0.4765625, z: -1319.2151, w: -20.158203}
+  m_margin: {x: -456.8026, y: -0.4765625, z: -1319.2151, w: -1.737793}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
