@@ -354,7 +354,7 @@ MonoBehaviour:
   displayDuration: 3
   fadeOutDuration: 2
   delayBetweenTexts: 1
-  nextSceneName: Intro_room
+  nextSceneName: Chapter1Title
   delayBeforeNextScene: 3
 --- !u!4 &276167317
 Transform:
@@ -548,8 +548,8 @@ MonoBehaviour:
   scrollSpeed: 50
   nextSceneName: Intro_room
   delayAfterScrollFinishes: 2
-  startYPositionOffset: 0
-  paddingBelowScreen: 100
+  startOffsetFromScreenBottom: 0
+  paddingAboveScreen: 100
 --- !u!4 &868919604
 Transform:
   m_ObjectHideFlags: 0

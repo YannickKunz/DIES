@@ -7,23 +7,25 @@ public class TextScroller : MonoBehaviour
 {
     [Header("Text Setup")]
     public TextMeshProUGUI scrollingText; // Assign your TextMeshPro object
-    public float scrollSpeed = 50f;       // Pixels per second
+    public float scrollSpeed = 50f;       // Pixels per second (positive for upward scroll)
 
     [Header("Scene Transition")]
     public string nextSceneName = "GameplayScene"; // Name of the scene to load after scroll
     public float delayAfterScrollFinishes = 2.0f; // Delay before loading next scene
 
-    [Header("Positioning & Control")]
-    public float startYPositionOffset = 0f; // How far ABOVE the top of the screen the text should start.
-                                            // If 0, text top starts at screen top.
-                                            // If positive, text starts further up (off-screen).
+    [Header("Positioning & Control (Upward Scroll)")]
+    [Tooltip("How far BELOW the bottom of the screen the text should start. " +
+             "If 0, text top starts at screen bottom. " +
+             "If positive, text starts further down (off-screen).")]
+    public float startOffsetFromScreenBottom = 0f;
 
-    public float paddingBelowScreen = 100f; // Extra space to scroll before considering it "off-screen"
+    [Tooltip("Extra space above the screen top before considering text fully scrolled.")]
+    public float paddingAboveScreen = 100f;
 
     private RectTransform textRectTransform;
     private RectTransform canvasRectTransform;
-    private float initialTextYPosition;
-    private float targetYPosition;
+    private float initialTextYPosition; // Y position of the text's pivot (bottom edge)
+    private float targetYPosition;      // Y position of the text's pivot (bottom edge) when it's off-screen
     private bool isScrolling = true;
     private bool skipInitiated = false;
 
@@ -37,72 +39,63 @@ public class TextScroller : MonoBehaviour
         }
 
         textRectTransform = scrollingText.GetComponent<RectTransform>();
-        if (textRectTransform.anchorMin.y != 1 || textRectTransform.anchorMax.y != 1 || textRectTransform.pivot.y != 1)
+        if (textRectTransform.anchorMin.y != 0 || textRectTransform.anchorMax.y != 0 || textRectTransform.pivot.y != 0)
         {
-            Debug.LogWarning("For best results, set Text's RectTransform Anchor Preset to Top-Stretch and Pivot Y to 1 (Top).");
+            // Forcing:
+            textRectTransform.anchorMin = new Vector2(textRectTransform.anchorMin.x, 0);
+            textRectTransform.anchorMax = new Vector2(textRectTransform.anchorMax.x, 0);
+            textRectTransform.pivot = new Vector2(textRectTransform.pivot.x, 0);
         }
 
         canvasRectTransform = scrollingText.canvas.GetComponent<RectTransform>();
+        if (canvasRectTransform == null)
+        {
+            Debug.LogError("Text object is not on a Canvas or Canvas is missing RectTransform!");
+            enabled = false;
+            return;
+        }
 
-        // Set initial position: Top of text element starts 'startYPositionOffset' units ABOVE the top of the canvas.
-        // Since Y is positive upwards from the anchor (which is at the top of the screen),
-        // a positive startYPositionOffset pushes it further up.
-        initialTextYPosition = startYPositionOffset;
+        // --- Initial Position Calculation ---
+        // Text's pivot is at its bottom edge, anchored to the canvas bottom.
+        // We want the *top* of the text to start 'startOffsetFromScreenBottom' units below the screen bottom.
+        // Screen bottom is at y=0 (relative to canvas bottom anchor).
+        // So, top of text should be at: 0 - startOffsetFromScreenBottom.
+        // Since textRectTransform.anchoredPosition.y is the bottom edge of the text,
+        // initialTextYPosition = (top_of_text_target_pos) - textRectTransform.rect.height
+        // initialTextYPosition = (0 - startOffsetFromScreenBottom) - textRectTransform.rect.height;
+        // This can be simplified: Place the *bottom edge* of the text so its *top edge* is off-screen.
+        // If startOffsetFromScreenBottom = 0, top of text is at screen bottom.
+        // Bottom edge of text = screen_bottom - text_height + start_offset (downwards).
+        // Since positive Y is up:
+        initialTextYPosition = -textRectTransform.rect.height - startOffsetFromScreenBottom;
         textRectTransform.anchoredPosition = new Vector2(textRectTransform.anchoredPosition.x, initialTextYPosition);
 
-        // Calculate target Y position:
-        // Text's top edge needs to be below the screen bottom by its own height + padding.
-        // Screen bottom (relative to top anchor) is -canvasRectTransform.rect.height.
-        // So, text top needs to reach -canvasRectTransform.rect.height - textRectTransform.rect.height - paddingBelowScreen
-        // However, since we're moving it from its initial position,
-        // it's simpler to think about total distance.
-        // Or, where the top of the text should end up.
-        targetYPosition = -(canvasRectTransform.rect.height + textRectTransform.rect.height + paddingBelowScreen);
+        // --- Target Position Calculation ---
+        // Scroll is finished when the *bottom edge* of the text is above the *top edge* of the canvas + padding.
+        // Top edge of canvas (relative to bottom anchor) is at canvasRectTransform.rect.height.
+        targetYPosition = canvasRectTransform.rect.height + paddingAboveScreen;
 
-        // More precise target Y if text starts at screen top (startYPositionOffset = 0):
-        // Its top needs to move from 0 down to -canvasHeight - textHeight - padding.
-        // If startYPositionOffset is positive, it starts higher, so its final target Y will be lower.
-        // The current targetYPosition is okay for this "scrolls down" effect.
-        // Let's adjust for starting position:
-        // End condition: Top of text should be below the bottom of the screen.
-        // Bottom of screen Y relative to top anchor is -canvasRectTransform.rect.height.
-        // So, top of text should be < -canvasRectTransform.rect.height.
-        // Add text height to ensure ALL text is off-screen.
-        // Add padding for good measure.
-        targetYPosition = -canvasRectTransform.rect.height - paddingBelowScreen; // Top of text passes bottom of screen
-                                                                                 // This is when the text's TOP edge has gone below the screen.
-                                                                                 // If you want when the BOTTOM edge of text leaves screen, it's simpler:
-                                                                                 // top of text needs to reach -canvasHeight - textHeight
+        Debug.Log($"Canvas Height: {canvasRectTransform.rect.height}, Text Height: {textRectTransform.rect.height}");
+        Debug.Log($"Initial Text Y (bottom edge): {initialTextYPosition}, Target Text Y (bottom edge): {targetYPosition}");
 
-        // Let's use a simpler target: When the top of the text goes below the bottom of the screen + its own height
-        targetYPosition = -(canvasRectTransform.rect.height + textRectTransform.rect.height + paddingBelowScreen);
-
-        // If text starts AT THE TOP OF THE SCREEN (Pos Y = 0 in editor, startYPositionOffset=0 in script)
-        // and its top anchor is at the top of the screen,
-        // then targetYPosition should be when its TOP edge is at:
-        // -(height of canvas) - (height of text rect) - padding
-        // This ensures the entire text block scrolls off.
-        float canvasHeight = canvasRectTransform.rect.height;
-        float textHeight = textRectTransform.rect.height; // Make sure RectTransform height is set large enough for all text!
-
-        // Initial position for the text's top edge (relative to top anchor of canvas)
-        textRectTransform.anchoredPosition = new Vector2(textRectTransform.anchoredPosition.x, startYPositionOffset);
-
-        // Target Y for the text's top edge to indicate it's fully off-screen at the bottom
-        targetYPosition = -(canvasHeight + textHeight + paddingBelowScreen);
-
+        // Ensure text RectTransform height is sufficient for its content.
+        // Consider using a ContentSizeFitter on the TextMeshPro object (Vertical Fit: Preferred Size)
+        // if the text content is dynamic or you don't want to manually set the height.
+        // If using ContentSizeFitter, you might need to get textRectTransform.rect.height *after* a frame or two,
+        // or force a canvas rebuild. For simplicity here, we assume height is correctly set.
     }
 
     void Update()
     {
         if (!isScrolling || skipInitiated) return;
 
-        // Move text downwards
+        // Move text upwards
+        // Note: anchoredPosition moves the pivot. Since pivot Y is 0 (bottom), this moves the bottom edge up.
         textRectTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
 
         // Check if scrolling is finished
-        // (i.e., top of text has passed below the target Y position)
-        if (textRectTransform.anchoredPosition.y <= targetYPosition)
+        // (i.e., bottom of text has passed above the target Y position)
+        if (textRectTransform.anchoredPosition.y >= targetYPosition)
         {
             isScrolling = false;
             // Snap to final position to avoid overshooting due to Time.deltaTime variance
@@ -113,21 +106,18 @@ public class TextScroller : MonoBehaviour
         // Allow skipping
         if (Input.anyKeyDown) // Any key, or mouse button
         {
-            if (isScrolling) // If scrolling, skip scroll and delay
-            {
-                Debug.Log("Skipping scroll...");
-                skipInitiated = true;
-                StopAllCoroutines(); // Stop any potential coroutines
-                SceneManager.LoadScene(nextSceneName);
-            }
-            else // If scroll finished and in delay period, skip delay
-            {
-                Debug.Log("Skipping delay...");
-                skipInitiated = true;
-                StopAllCoroutines();
-                SceneManager.LoadScene(nextSceneName);
-            }
+            HandleSkip();
         }
+    }
+
+    void HandleSkip()
+    {
+        if (skipInitiated) return; // Already skipping
+
+        skipInitiated = true;
+        Debug.Log(isScrolling ? "Skipping scroll..." : "Skipping delay...");
+        StopAllCoroutines(); // Stop any potential coroutines (like LoadNextSceneAfterDelay)
+        SceneManager.LoadScene(nextSceneName);
     }
 
     IEnumerator LoadNextSceneAfterDelay()
