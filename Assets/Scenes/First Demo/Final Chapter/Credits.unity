@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollingText: {fileID: 888344179}
-  scrollSpeed: 75
+  scrollSpeed: 150
   nextSceneName: StartMenuScene
   delayAfterScrollFinishes: 3
   startOffsetFromScreenBottom: 0
@@ -599,8 +599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -401.5, y: -8362.992}
-  m_SizeDelta: {x: 193, y: 8175.5645}
+  m_AnchoredPosition: {x: -401.5, y: -8220.351}
+  m_SizeDelta: {x: 193, y: 8036.119}
   m_Pivot: {x: 0.5, y: -0.022924881}
 --- !u!114 &888344179
 MonoBehaviour:
@@ -630,7 +630,7 @@ MonoBehaviour:
     Yann\nUI Design: Andr\xE9\n\n\n\n\nProgramming & Logic\r\nAndr\xE9, Cem, Yann,
     Yannick\r\n\n\n\r\nAudio\r\nMusic Composition & Recording: Andr\xE9\nAudio Implementation:
     Andr\xE9\n\n\n\r\n\nTools & Technologies\r\nMade with Unity\n\n\n\r\nExternal
-    Assets\r\n\"Metroidvania Controller\" by [AisuKazeStudio] (Unity Asset Store)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\nSpecial
+    Assets\r\n\"Metroidvania Controller\" by AisuKazeStudio (Unity Asset Store)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\nSpecial
     Thanks to \r\nMaurizio, for his guidance, \nthe Goddess Athena for her blessings,\nAnd
     our Families and Friends for their support and feedback.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
     you for playing! \r\n\r\n"
