@@ -8,6 +8,12 @@ public class MemoryFragment : MonoBehaviour
     [SerializeField] private bool destroyOnCollect = true;
     [SerializeField] private float collectionDelay = 0.1f;
     
+    [Header("Fragment Type")]
+    [Tooltip("If assigned, this fragment will notify the specific group handler when collected")]
+    [SerializeField] private EnemyGroupDeathHandler specificGroupHandler;
+    [Tooltip("If true, this fragment counts toward the global fragment count")]
+    [SerializeField] private bool countsTowardGlobalFragments = true;
+    
     [Header("Visual Effects")]
     [SerializeField] private GameObject collectEffect;
     [SerializeField] private float bobAmplitude = 0.2f;
@@ -86,14 +92,26 @@ public class MemoryFragment : MonoBehaviour
             Instantiate(collectEffect, transform.position, Quaternion.identity);
         }
         
-        // Notify the fragment collector system
-        if (FragmentCollector.Instance != null)
+        // Notify the global fragment collector system (for overall progress)
+        if (countsTowardGlobalFragments && FragmentCollector.Instance != null)
         {
             FragmentCollector.Instance.CollectFragment();
+            Debug.Log($"🌍 Global fragment collected! Total: {FragmentCollector.Instance.TotalFragments}");
+        }
+        else if (specificGroupHandler != null)
+        {
+            Debug.Log($"📍 Group-specific fragment - not counting toward global total");
+        }
+        
+        // Notify specific group handler (for conditional portals)
+        if (specificGroupHandler != null)
+        {
+            specificGroupHandler.NotifyFragmentCollected();
+            Debug.Log($"🎯 Notified specific group handler: {specificGroupHandler.name}");
         }
         else
         {
-            Debug.LogError("💀 FragmentCollector.Instance is null! Make sure player has FragmentCollector component.");
+            Debug.Log($"ℹ️ No specific group handler assigned - this is a regular memory fragment");
         }
         
         // Wait a bit for effects/sound
@@ -113,6 +131,20 @@ public class MemoryFragment : MonoBehaviour
             if (fragmentCollider != null)
                 fragmentCollider.enabled = false;
         }
+    }
+    
+    // Method to set the specific group handler (called by EnemyGroupDeathHandler when spawning)
+    public void SetGroupHandler(EnemyGroupDeathHandler handler)
+    {
+        specificGroupHandler = handler;
+        Debug.Log($"💎 {gameObject.name}: Assigned to group handler {handler.name}");
+    }
+    
+    // Method to configure fragment behavior (called by EnemyGroupDeathHandler)
+    public void ConfigureAsGroupFragment(bool countsGlobally = false)
+    {
+        countsTowardGlobalFragments = countsGlobally;
+        Debug.Log($"⚙️ {gameObject.name}: Configured as group fragment (Global: {countsGlobally})");
     }
     
     // Manual collection method for testing
