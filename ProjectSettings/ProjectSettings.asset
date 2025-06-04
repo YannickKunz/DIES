@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: projectDIES
+  productName: Echoes of Sanity
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1080
+  defaultScreenHeightWeb: 900
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
@@ -676,7 +676,7 @@ PlayerSettings:
   cloudProjectId: b6859372-47dd-4c29-944f-d58342f03cee
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: projectDIES
+  projectName: Echoes of Sanity
   organizationId: chukobo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
