@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4572e0a09446905429b4b2c1733af262
+guid: 0f599d2a533254d5a9d5d077f411e448
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6423935293252839665
-    second: pitch_black_background_0
+      213: -7527453767698949588
+    second: gate_no_background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pitch_black_background_0
+      name: gate_no_background_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1889
-        height: 1428
+        x: 250
+        y: 413
+        width: 530
+        height: 903
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f82e6e1d17662950800000000000000
-      internalID: 6423935293252839665
+      spriteID: c2ad0213eac198790800000000000000
+      internalID: -7527453767698949588
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pitch_black_background_0: 6423935293252839665
+      gate_no_background_0: -7527453767698949588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

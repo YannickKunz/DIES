@@ -10,10 +10,13 @@ public class GameManager : MonoBehaviour
     // --- Mushroom Collection ---
     public int mushroomsToCollect = 10; // Target number of mushrooms
     private int currentMushroomsCollected = 0;
+    public string collectableName = "Mushroom"; // Name of the collectable item, can be used for debugging or UI
 
     // --- UI (Optional) ---
     [Header("UI Elements")]
     public Text mushroomCountText; // Assign a UI Text element in the Inspector
+    public Image mushroomIconImage; // Assign a UI Image element for the icon
+
 
     // --- Level Transition ---
     [Header("Scene Management")]
@@ -55,11 +58,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    //public Text mushroomCountText; // Assign a UI Text element in the Inspector
+
+
     void UpdateMushroomUI()
     {
         if (mushroomCountText != null)
         {
-            mushroomCountText.text = "Mushrooms: " + currentMushroomsCollected + " / " + mushroomsToCollect;
+            mushroomCountText.text = collectableName + ": " + currentMushroomsCollected + " / " + mushroomsToCollect;
+        }
+
+        if (mushroomIconImage != null)
+        {
+            // Show the icon if at least one mushroom is collected, hide otherwise
+            mushroomIconImage.enabled = currentMushroomsCollected > 0;
         }
     }
 

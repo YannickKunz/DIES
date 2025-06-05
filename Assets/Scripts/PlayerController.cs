@@ -81,8 +81,66 @@ public class PlayerController : MonoBehaviour
     private float jumpWallDistX = 0;
     private float prevVelocityX = 0f;
 
+    void Awake()
+    {
+        // --- Component Initialization ---
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        levelManager = FindObjectOfType<LevelManager>(); // Use FindObjectOfType if only one LevelManager exists
+
+        // --- CRITICAL STATE RESET FOR NEW INSTANCE ---
+
+        // Animator Reset
+        if (animator != null)
+        {
+            animator.SetBool("IsDead", false);
+            // Force playing a known entry state like Idle. Ensure "Idle" is the correct name of your state.
+            animator.Play("Idle", -1, 0f); // -1 for base layer, 0f for normalized time
+            // Reset other animation parameters that might persist
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsDoubleJumping", false);
+            animator.SetBool("JumpUp", false);
+            animator.SetBool("IsWallSliding", false);
+            animator.SetBool("IsDashing", false);
+            animator.SetBool("Hit", false);
+        }
+
+        // Movement and Ability Flags Reset
+        canMove = true;
+        invincible = false;
+        canDash = true;
+        isDashing = false;
+        canDoubleJump = true; // Player should be able to jump once or double jump upon respawn
+        isWallSliding = false;
+        oldWallSliding = false;
+        limitVelOnWallJump = false;
+        // facingRight = true; // Or your default facing direction
+
+        // Player Stats Reset
+        life = 10f; // Reset to initial life value
+
+        // Rigidbody State Reset (usually handled by new instance, but good for safety)
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        // Ensure Colliders are Enabled (should be default on prefab, but good check)
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D col in colliders)
+        {
+            col.enabled = true;
+        }
+
+        // Reset Tag (if it was changed during death sequence)
+        gameObject.tag = "Player"; // Assuming "Player" is the original tag
+    }
+
+
     void Start()
     {
+
         levelManager = Object.FindFirstObjectByType<LevelManager>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -574,9 +632,10 @@ public void ApplyDamage(DamageInfo info)
         
         Debug.Log("⏳ Restarting level in 1 second...");
         yield return new WaitForSeconds(1.1f);
-        
+        //animator.SetBool("IsDead", false); 
         Debug.Log("🔄 Reloading current scene");
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
     
     // 🆕 NEW: Tell enemies to stop attacking dead player
