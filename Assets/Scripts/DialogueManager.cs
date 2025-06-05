@@ -50,8 +50,8 @@ public class DialogueManager : MonoBehaviour
     //FindFirstObjectByType<PlayerMovement>().enabled = false;
     //FindFirstObjectByType<PlayerMovement>().runSpeed = 0f;
     //FindFirstObjectByType<PlayerController>().runSpeed = 0f;
-    FindFirstObjectByType<AudioSource>().enabled = false;
-    FindFirstObjectByType<Animator>().enabled = false;
+    //FindFirstObjectByType<AudioSource>().enabled = false;
+    //FindFirstObjectByType<Animator>().enabled = false;
     // Freeze x and y axis of the player
     //FindFirstObjectByType<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     ShowLine();

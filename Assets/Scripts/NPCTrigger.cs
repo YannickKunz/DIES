@@ -9,6 +9,7 @@ public class NPCTrigger : MonoBehaviour
     public float triggerRadius = 2f;
     private Transform player;
     private bool playerInRange = false;
+    public LevelExit levelExit; 
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class NPCTrigger : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    void Update()
+   void Update()
     {
         // simple distance check
         if (Vector3.Distance(transform.position, player.position) <= triggerRadius)
@@ -25,7 +26,10 @@ public class NPCTrigger : MonoBehaviour
             {
                 playerInRange = true;
                 // automatically start dialogue when entering range
+                if (levelExit != null && levelExit.canExit==false)
+                {
                 DialogueManager.Instance.StartDialogue(dialogueLines);
+                }
             }
         }
         else

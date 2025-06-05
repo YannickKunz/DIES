@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; // For loading scenes
 using UnityEngine.UI; // If you want to display the count on screen
 
+
 public class GameManager : MonoBehaviour
 {
     // --- Singleton Pattern (Optional but common for GameManagers) ---
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     [Header("UI Elements")]
     public Text mushroomCountText; // Assign a UI Text element in the Inspector
     public Image mushroomIconImage; // Assign a UI Image element for the icon
+    public LevelExit levelExit; 
 
 
     // --- Level Transition ---
@@ -55,6 +57,15 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("All mushrooms collected! Proceeding to next level.");
             LoadNextLevel();
+        }
+
+        if (currentMushroomsCollected == mushroomsToCollect/2)
+        {
+            if (levelExit != null)
+            {
+                levelExit.canExit = true;
+                Debug.Log("Enough key collected!");
+            }
         }
     }
 
