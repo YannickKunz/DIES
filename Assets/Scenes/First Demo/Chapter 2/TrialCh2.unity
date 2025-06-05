@@ -21556,6 +21556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSceneName: StartMenuSceneCh3
+  animator: {fileID: 1995371385}
   flashlightDamager: {fileID: 276548037}
   lightVisual: {fileID: 1724389875}
   attackInputName: Fire1
@@ -21568,6 +21569,11 @@ MonoBehaviour:
   lightGaugeFillImage: {fileID: 0}
   isDead: 0
   currentLightCharge: 100
+--- !u!95 &1995371385 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95975118031919256, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+  m_PrefabInstance: {fileID: 240678402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2006821785
 GameObject:
   m_ObjectHideFlags: 0
