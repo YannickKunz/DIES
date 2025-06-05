@@ -5,7 +5,7 @@ public class FragmentCollector : MonoBehaviour
 {
     [Header("Fragment Collection")]
     [SerializeField] private int totalFragmentsCollected = 0;
-    [SerializeField] private int fragmentsRequiredForPortal = 5;
+    [SerializeField] private int fragmentsRequiredForPortal = 3;
     
     [Header("Debug Info")]
     [SerializeField] private bool showDebugLogs = true;

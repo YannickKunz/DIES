@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/First Demo/Chapter 1/StartMenuScene.unity
     guid: 48a760428628e5444ad365450a8808c2
   - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 1/IntroText.unity
+    guid: 6cd2fcb6fc05d3d49bd2891d5cb5f139
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 1/Chapter1Title.unity
+    guid: e6aab9c3a84cf604baf3f39d221eb31c
+  - enabled: 1
     path: Assets/Scenes/First Demo/Chapter 1/Intro_room.unity
     guid: 6690c50b422dbf74dbb61b9cdfa9992a
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Chapter 1/Outdoor.unity
+    guid: d24273b0b616e054ebd26d54347ec038
   - enabled: 1
     path: Assets/Scenes/First Demo/Chapter 1/DeathScene.unity
     guid: d04fb07ebae52104e8f8c02212fdde9e
@@ -65,5 +74,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gallery_like_scene.unity
     guid: 318be6b73bf0bac4e86d43dbfa5ddd16
+  - enabled: 1
+    path: Assets/Scenes/First Demo/Final Chapter/Credits.unity
+    guid: 49157e6c929b2954f8242d14cd75c5f0
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

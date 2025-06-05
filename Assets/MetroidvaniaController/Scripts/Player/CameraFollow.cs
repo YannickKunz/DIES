@@ -39,6 +39,17 @@ public class CameraFollow : MonoBehaviour
 
 	private void Update()
 	{
+		// 🔧 FIX: Check if Target exists, auto-find player if missing
+		if (Target == null)
+		{
+			FindPlayer();
+			if (Target == null)
+			{
+				// Still no player found, skip this frame
+				return;
+			}
+		}
+
 		Vector3 newPosition = Target.position;
 		newPosition.y += yOffset;   // Shift the camera up by yOffset
 		newPosition.z = -10;		// Keep the camera at the same z position
@@ -50,6 +61,21 @@ public class CameraFollow : MonoBehaviour
 			camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
 
 			shakeDuration -= Time.deltaTime * decreaseFactor;
+		}
+	}
+
+	// 🆕 NEW: Auto-find player method for scene transitions
+	private void FindPlayer()
+	{
+		GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+		if (playerObj != null)
+		{
+			Target = playerObj.transform;
+			Debug.Log($"CameraFollow: Found player '{playerObj.name}' in scene");
+		}
+		else
+		{
+			Debug.LogWarning("CameraFollow: No player found with 'Player' tag in scene!");
 		}
 	}
 

@@ -538,21 +538,93 @@ public void ApplyDamage(DamageInfo info)
 
     IEnumerator WaitToDead()
     {
+        Debug.Log("💀 Player death sequence started");
+        
         if (animator != null)
             animator.SetBool("IsDead", true);
             
         canMove = false;
         invincible = true;
         
-        // If you have an Attack component, disable it
+        // 🔧 DISABLE ALL COLLIDERS so enemies can't attack corpse
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D col in colliders)
+        {
+            col.enabled = false;
+            Debug.Log($"🚫 Disabled collider: {col.name}");
+        }
+        
+        // 🔧 CHANGE TAG so enemies lose target
+        string originalTag = gameObject.tag;
+        gameObject.tag = "Dead";
+        Debug.Log($"🏷️ Changed player tag from '{originalTag}' to 'Dead'");
+        
+        // Disable attack ability
         var attackComponent = GetComponent<Attack>();
         if (attackComponent != null)
             attackComponent.enabled = false;
             
+        // Stop all movement
         yield return new WaitForSeconds(0.4f);
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        
+        // 🔧 NOTIFY ENEMIES that player is dead
+        NotifyEnemiesOfPlayerDeath();
+        
+        Debug.Log("⏳ Restarting level in 1 second...");
         yield return new WaitForSeconds(1.1f);
+        
+        Debug.Log("🔄 Reloading current scene");
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+    
+    // 🆕 NEW: Tell enemies to stop attacking dead player
+    private void NotifyEnemiesOfPlayerDeath()
+    {
+        // Find all enemies and tell them to stop targeting player
+        GameObject[] demons = GameObject.FindGameObjectsWithTag("Demon");
+        GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        
+        int notifiedCount = 0;
+        
+        foreach (GameObject demon in demons)
+        {
+            DemonAI demonAI = demon.GetComponent<DemonAI>();
+            if (demonAI != null)
+            {
+                // Force demon to idle state when player dies
+                try
+                {
+                    demonAI.ChangeState(DemonAI.DemonState.Idle);
+                    notifiedCount++;
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogWarning($"Failed to notify demon {demon.name}: {e.Message}");
+                }
+            }
+        }
+        
+        foreach (GameObject ghost in ghosts)
+        {
+            GhostAI ghostAI = ghost.GetComponent<GhostAI>();
+            if (ghostAI != null)
+            {
+                try
+                {
+                    ghostAI.ChangeState(GhostAI.GhostState.Idle);
+                    notifiedCount++;
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogWarning($"Failed to notify ghost {ghost.name}: {e.Message}");
+                }
+            }
+        }
+        
+        Debug.Log($"📢 Notified {notifiedCount} enemies that player died");
     }
 
     // Visualize the ground and wall check areas
