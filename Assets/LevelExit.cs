@@ -8,11 +8,13 @@ public class LevelExit : MonoBehaviour
 
     private bool isLoadingNextLevel = false; // Prevents trying to load multiple times
 
+    public bool canExit = false; // need to meet conditions before exit
+
     // This function is called by Unity WHEN another Collider2D enters this trigger
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if we're already loading and if the object entering is the Player
-        if (!isLoadingNextLevel && other.CompareTag("Player")) // Assumes your player GameObject has the "Player" tag
+        if (!isLoadingNextLevel && other.CompareTag("Player") && canExit) // Assumes your player GameObject has the "Player" tag
         {
             Debug.Log("Player entered the Level Exit trigger for scene: " + nextSceneName);
 
