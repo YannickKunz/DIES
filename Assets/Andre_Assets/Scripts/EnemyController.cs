@@ -7,6 +7,30 @@ public class EnemyController : MonoBehaviour
     private bool isPlayerInRange = false; // Tracks if the player is within the trigger
     public bool alwaysActive = false; // Set this to true for enemies that should always move
 
+
+    // --- Private Variables ---
+    private SpriteRenderer spriteRenderer; // **NEW**: Reference to the sprite renderer
+
+    void Awake()
+    {
+        // **NEW**: Get the SpriteRenderer component attached to this GameObject.
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("EnemyController requires a SpriteRenderer component.", this);
+        }
+
+        // It's good practice to find the player by tag if it's not assigned,
+        // but assigning in the Inspector is fine too.
+        if (player == null)
+        {
+            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
+        }
+    }
     void Update()
     {
 
@@ -22,6 +46,20 @@ public class EnemyController : MonoBehaviour
             direction.y = 0f;
             // Move the enemy toward the player
             transform.position += direction * speed * Time.deltaTime;
+
+
+            // --- **NEW: SPRITE FLIPPING LOGIC** ---
+            // Check the horizontal direction
+            if (direction.x > 0)
+            {
+                // Moving Right - ensure sprite is not flipped
+                spriteRenderer.flipX = false;
+            }
+            else if (direction.x < 0)
+            {
+                // Moving Left - flip the sprite
+                spriteRenderer.flipX = true;
+            }
 
             // Optional: Rotate the enemy to face the player
             // Quaternion lookRotation = Quaternion.LookRotation(direction);
