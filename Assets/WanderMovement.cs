@@ -10,11 +10,15 @@ public class WanderMovement : MonoBehaviour
     private Vector3 targetPosition;
     private float timer;
     private Rigidbody2D rb; // Use Rigidbody for movement
+    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer
+
 
     void Awake()
     {
         startPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
+
          if (rb == null) {
             Debug.LogError("WanderMovement requires a Rigidbody2D component!", this);
             enabled = false; // Disable script if no Rigidbody2D
@@ -40,7 +44,11 @@ public class WanderMovement : MonoBehaviour
         if(rb != null) {
             Vector2 direction = (targetPosition - transform.position).normalized;
             rb.linearVelocity = direction * speed;
-
+            // Flip sprite based on movement direction
+            if (spriteRenderer != null && direction.x != 0) // Check direction.x to avoid flipping when moving only vertically
+            {
+                spriteRenderer.flipX = direction.x < 0;
+            }
             // Optional: Stop if very close to target to prevent jittering
             if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
             {
