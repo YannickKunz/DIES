@@ -1898,7 +1898,8 @@ MonoBehaviour:
   - Chapter 2
   - The Trial
   - After some time, Francis finally found the exit.
-  - But his freedom will not last for long...
+  - But his freedom will not last for long.
+  - For, it was not for nothing he was trapped in this wretched place...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   fadeInDuration: 1
   displayDuration: 3

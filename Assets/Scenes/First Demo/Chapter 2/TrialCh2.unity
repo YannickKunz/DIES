@@ -353,7 +353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &92146162
 Transform:
   m_ObjectHideFlags: 0
@@ -656,7 +656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &156856456
 Transform:
   m_ObjectHideFlags: 0
@@ -1017,6 +1017,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2925628981498797665, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914675755217143322, guid: ecacda0373831e3478571c44ad8e01e1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1722,7 +1726,7 @@ Transform:
   m_GameObject: {fileID: 562168732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -223.1, y: -167.4, z: -0.8451465}
+  m_LocalPosition: {x: -223.1, y: -168.7, z: -0.8451465}
   m_LocalScale: {x: 0.37074178, y: 0.2757154, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1806,7 +1810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1995371382}
-  speed: 10
+  speed: 2
   alwaysActive: 1
 --- !u!50 &562168737
 Rigidbody2D:
@@ -1878,7 +1882,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8836008208561737783, guid: d3726053d2386479584433646d802777, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -8080,8 +8084,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8fe43500700243a45946e0df34ce55be, type: 3}
-  m_Resource: {fileID: 8300000, guid: 8fe43500700243a45946e0df34ce55be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7ec6e8d0c1dc4e64a8ea1944d002db48, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7ec6e8d0c1dc4e64a8ea1944d002db48, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.16
   m_Pitch: 1
@@ -13387,7 +13391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1226079693
 Transform:
   m_ObjectHideFlags: 0
@@ -19821,7 +19825,7 @@ Transform:
   m_GameObject: {fileID: 1546200766}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -210.1, y: -167.4, z: -0.8451465}
+  m_LocalPosition: {x: -209.5, y: -168.7, z: -0.8451465}
   m_LocalScale: {x: 0.37074178, y: 0.2757154, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19905,7 +19909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1995371382}
-  speed: 10
+  speed: 2
   alwaysActive: 1
 --- !u!50 &1546200771
 Rigidbody2D:
@@ -19977,7 +19981,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8836008208561737783, guid: d3726053d2386479584433646d802777, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
