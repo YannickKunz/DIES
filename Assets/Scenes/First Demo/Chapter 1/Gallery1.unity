@@ -487,7 +487,7 @@ Transform:
   m_GameObject: {fileID: 136845191}
   serializedVersion: 2
   m_LocalRotation: {x: 0.006514223, y: -0, z: -0, w: 0.99997884}
-  m_LocalPosition: {x: -326.5, y: -8.4, z: 24.937243}
+  m_LocalPosition: {x: -343.7, y: -8.4, z: 24.937243}
   m_LocalScale: {x: 0.7282884, y: 0.7282884, z: 0.7282884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2374,6 +2374,7 @@ MonoBehaviour:
   doorDraftPrefab: {fileID: 0}
   draftSpawnPoint: {fileID: 0}
   canExit: 0
+  delay: 1
 --- !u!50 &1449769717
 Rigidbody2D:
   serializedVersion: 5
@@ -3282,7 +3283,7 @@ Transform:
   m_GameObject: {fileID: 1885328231}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102.9, y: -13.5, z: -1.5859078}
+  m_LocalPosition: {x: 103.4, y: -14, z: -1.5859078}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

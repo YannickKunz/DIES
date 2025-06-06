@@ -51,9 +51,9 @@ public class FadingTextSequence : MonoBehaviour
         if (Input.anyKeyDown && !skipInitiated)
         {
             Debug.Log("Skipping text sequence...");
-            //skipInitiated = true;
-            //StopAllCoroutines(); // Stop any ongoing fading or waiting
-            //SceneManager.LoadScene(nextSceneName);
+            skipInitiated = true;
+            StopAllCoroutines(); // Stop any ongoing fading or waiting
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 
