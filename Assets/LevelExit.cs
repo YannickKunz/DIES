@@ -18,6 +18,7 @@ public class LevelExit : MonoBehaviour
 
     private bool isLoadingNextLevel = false;
     public bool canExit = false;
+    public float delay = 1f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -46,7 +47,7 @@ public class LevelExit : MonoBehaviour
             }
 
             // Start delayed level loading
-            StartCoroutine(LoadNextLevelWithDelay(1f)); // 1-second delay
+            StartCoroutine(LoadNextLevelWithDelay(delay)); // 1-second delay
         }
     }
 
