@@ -83,5 +83,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Gallery_like_scene.unity
     guid: 318be6b73bf0bac4e86d43dbfa5ddd16
+  - enabled: 1
+    path: Assets/Scenes/Invisible Plat Level.unity
+    guid: 498b12aa50e6563478d81efa3e623df4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

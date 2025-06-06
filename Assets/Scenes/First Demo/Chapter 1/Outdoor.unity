@@ -12440,7 +12440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a97553f4d220114cb7e6e099936f61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Gallery1
+  nextSceneName: Invisible Plat Level
   doorOpenSound: {fileID: 1823128580}
   doorDraftPrefab: {fileID: 1664310639}
   draftSpawnPoint: {fileID: 55822906}
@@ -20024,7 +20024,7 @@ MonoBehaviour:
   mushroomCountText: {fileID: 0}
   mushroomIconImage: {fileID: 1794862196}
   levelExit: {fileID: 1089095540}
-  nextSceneName: Gallery1
+  nextSceneName: Invisible Plat Level
 --- !u!4 &1740926627
 Transform:
   m_ObjectHideFlags: 0
