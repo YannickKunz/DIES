@@ -28,7 +28,7 @@ public class FragmentCollector : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             DebugLog("FragmentCollector initialized as singleton");
         }
         else

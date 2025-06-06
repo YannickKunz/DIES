@@ -3,11 +3,17 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal; // Required for Light2D
 using UnityEngine.UI; // Required for UI Image
 
+using System.Collections; // Required for Coroutines
+
 public class PlayerHealth : MonoBehaviour
 {
     // ... (Keep existing Health, Flashlight Attack, UI, Debug variables) ...
     [Header("Health Settings")]
     public string deathSceneName = "DeathScene";
+
+    public AudioClip deathSound; // Sound to play on death
+
+    public Animator animator;
 
     [Header("Flashlight Attack Settings")]
     public FlashlightDamager flashlightDamager;
@@ -33,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
     private PlayerController playerController;
     private SpriteRenderer spriteRenderer;
     private Camera mainCamera; // Cached reference to the main camera
+    private AudioSource audioSource; // To play sounds
+
 
     void Awake()
     {
@@ -40,6 +48,13 @@ public class PlayerHealth : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentLightCharge = maxLightCharge;
+                // --- Get or Add AudioSource component ---
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            Debug.LogWarning("PlayerHealth: No AudioSource found, one was added automatically.", this);
+        }
 
         // --- Cache the main camera ---
         mainCamera = Camera.main;
@@ -155,8 +170,60 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // --- Other Functions (Remain the same) ---
-    void OnTriggerEnter2D(Collider2D other) { if (isDead) return; if (other.gameObject.CompareTag("Ghost")) { Die(); } }
-    private void Die() { /* ... as before ... */ if (isDead) return; isDead = true; Debug.Log("Player Died! Initiating death sequence."); if (playerController != null) { playerController.enabled = false; } isActivelyDamaging = false; if (lightVisual != null) lightVisual.color = normalColor; Rigidbody2D rb = GetComponent<Rigidbody2D>(); if (rb != null) { rb.linearVelocity = Vector2.zero; } LoadDeathScene(); }
+    void OnTriggerEnter2D(Collider2D other) { if (isDead) return; if (other.gameObject.CompareTag("Ghost")) { StartCoroutine(Die()); } }
+    private IEnumerator Die() { // Changed void to IEnumerator
+        if (isDead) yield break; // Prevent multiple death calls / coroutine runs
+
+        isDead = true; // Mark as dead immediately
+        Debug.Log("Player Died! Initiating death sequence.");
+
+                // Play death sound
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+        else if (deathSound == null)
+        {
+            Debug.LogWarning("PlayerHealth: Death sound clip not assigned.", this);
+        }
+        else if (audioSource == null)
+        {
+            Debug.LogWarning("PlayerHealth: AudioSource not found, cannot play death sound.", this);
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool("IsDead", true); // Correctly trigger death animation
+        }
+        else
+        {
+            Debug.LogWarning("PlayerHealth: Animator not found, death animation will not play.", this);
+        }
+
+        if (playerController != null)
+        {
+            playerController.enabled = false; // Disable player controls
+        }
+
+        isActivelyDamaging = false; // Stop flashlight damage
+        if (lightVisual != null)
+        {
+            lightVisual.color = normalColor; // Reset light color
+        }
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero; // More direct way to stop movement
+            rb.angularVelocity = 0f;    // Stop rotation too
+        }
+
+
+        // Wait for 3 seconds
+        yield return new WaitForSeconds(3f);
+
+        LoadDeathScene(); // Load the death scene
+    }
     private void LoadDeathScene() { /* ... as before ... */ Debug.Log("Loading Scene: " + deathSceneName); SceneManager.LoadScene(deathSceneName); }
     public float GetCurrentChargeNormalized() { /* ... as before ... */ if (maxLightCharge <= 0f) { return 0f; } return Mathf.Clamp01(currentLightCharge / maxLightCharge); }
 }

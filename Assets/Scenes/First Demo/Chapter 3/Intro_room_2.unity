@@ -1449,6 +1449,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: StartMenuSceneCh4
+  doorOpenSound: {fileID: 0}
+  doorDraftPrefab: {fileID: 0}
+  draftSpawnPoint: {fileID: 0}
+  canExit: 1
 --- !u!50 &798691329
 Rigidbody2D:
   serializedVersion: 5
@@ -1813,6 +1817,7 @@ MonoBehaviour:
   - 
   - 
   triggerRadius: 5
+  levelExit: {fileID: 0}
 --- !u!61 &1244382687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2207,6 +2212,7 @@ MonoBehaviour:
     (Press F to
     continue)'
   triggerRadius: 3
+  levelExit: {fileID: 0}
 --- !u!212 &1454521315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3588,7 +3594,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -1.9020715}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 1.5}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 15.36, y: 7.28}
     newSize: {x: 15.36, y: 4}

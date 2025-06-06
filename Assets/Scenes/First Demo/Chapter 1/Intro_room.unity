@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a97553f4d220114cb7e6e099936f61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: StartMenuSceneCh2
+  nextSceneName: Outdoor
   doorOpenSound: {fileID: 440746514}
   doorDraftPrefab: {fileID: 76533256}
   draftSpawnPoint: {fileID: 1244382685}
