@@ -1897,6 +1897,8 @@ MonoBehaviour:
   textLines:
   - Chapter 2
   - The Trial
+  - After some time, Francis finally found the exit.
+  - But his freedom will not last for long...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   fadeInDuration: 1
   displayDuration: 3
